@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.769014",
+   "Default View_TopLeft":"155,-172",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -70 -y 40 -defaultsOSRD
+preplace port port-id_sw -pg 1 -lvl 0 -x -70 -y 160 -defaultsOSRD
+preplace portBus JA -pg 1 -lvl 4 -x 960 -y 200 -defaultsOSRD
+preplace portBus encoder_input_0 -pg 1 -lvl 0 -x -70 -y 180 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 200 -y 100 -defaultsOSRD
+preplace inst driver_state_machine_0 -pg 1 -lvl 3 -x 780 -y 200 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 780 -y 70 -defaultsOSRD
+preplace inst encoder_counter_0 -pg 1 -lvl 2 -x 450 -y 120 -defaultsOSRD
+preplace inst var_ultra_lux_0 -pg 1 -lvl 3 -x 780 -y 400 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 450 -y 400 -defaultsOSRD
+preplace netloc Net 1 0 3 NJ 160 290 200 610J
+preplace netloc clk_0_1 1 0 3 110 40 NJ 40 600
+preplace netloc clk_wiz_0_clk_out1 1 1 1 NJ 100
+preplace netloc encoder_counter_0_counter 1 2 1 620 80n
+preplace netloc encoder_input_0_1 1 0 2 NJ 180 300J
+preplace netloc xlconstant_0_dout 1 2 1 600 400n
+preplace netloc var_ultra_lux_0_lux_state_out 1 3 1 940 200n
+levelinfo -pg 1 -70 200 450 780 960
+pagesize -pg 1 -db -bbox -sgen -260 -250 1060 490
+"
+}
+0

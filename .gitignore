@@ -1,0 +1,53 @@
+# Vivado-generated directories
+.project/
+.sdk/
+.hw/
+.ip_user_files/
+.sim/
+.srcs/
+.webtalk/
+.cache/
+.build/
+.xpr/
+*log
+*jou
+*.runs/
+*.data/
+*.rpt/
+*.gen/
+*.restore/
+
+# Vivado-specific files
+*.xise
+*.xco
+*.xpr
+*.wdb
+*.log
+*.jou
+*.str
+*.xml
+*.tcl
+*.ppr
+*.mcs
+*.prj
+*.csv
+*.html
+*.xml
+*.bin
+*.mem
+*.ucf
+*.vhdl
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+*~
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other IDE-specific files
+*.vscode/
+*.idea/
