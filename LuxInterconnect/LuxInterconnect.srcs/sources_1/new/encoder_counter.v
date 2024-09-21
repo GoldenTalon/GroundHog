@@ -1,14 +1,16 @@
-module encoder_counter(
+module encoder_counter#(parameter four_counter_enable = 0)(
     input wire clk,
     input wire rst,  // Reset signal
     input wire [1:0] encoder_input, // Input from the encoder
-    output reg [31:0] counter  // 32-bit counter (ranges from 0 to 1000)
+    output reg [31:0] counter_div_by_4  // 32-bit counter (ranges from 0 to 1000)
 );
 
     reg [1:0] prev_state;  // Previous state of encoder
     reg [3:0] state;       // Combined previous and current state
     reg [1:0] stable_input;  // Debounced input
     reg [15:0] debounce_counter;  // 16-bit debounce counter
+    reg [15:0] counter;
+    reg [15:0] debounce_counter_four;  // 16-bit debounce counter
 
     // Function to determine direction based on Quadrature Encoder Matrix
     function integer QEM(input [3:0] state);
@@ -37,13 +39,14 @@ module encoder_counter(
     always @(posedge clk or posedge rst) begin
         if (rst) begin
             debounce_counter <= 16'd0;  // Reset debounce counter
+            debounce_counter_four <= 16'd0;  // Reset debounce counter
             stable_input <= 2'b00;     // Reset stable input
         end else begin
             if (encoder_input == stable_input) begin
                 debounce_counter <= 16'd0;  // Reset debounce counter if input is stable
             end else begin
-                if (debounce_counter < 16'd5000000) begin
-                    debounce_counter <= debounce_counter + 1;  // Increment debounce counter
+                if (debounce_counter < 16'd10000000) begin
+                    debounce_counter <= (debounce_counter + 1);  // Increment debounce counter
                 end else begin
                     stable_input <= encoder_input;  // Accept new stable input after 200 cycles
                     debounce_counter <= 16'd0;  // Reset debounce counter
@@ -66,7 +69,7 @@ module encoder_counter(
                 1: if (counter < 32'd1000) counter <= counter + 1;  // Increment counter
                 -1: if (counter > 32'd0) counter <= counter - 1;  // Decrement counter
             endcase
-            
+            counter_div_by_4 <= counter >> 2;
             // Update previous state
             prev_state <= stable_input;
         end

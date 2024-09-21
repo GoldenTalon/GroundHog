@@ -38,6 +38,9 @@
 *.ucf
 *.vhdl
 
+# Rino 3d Files
+*.3dm
+
 # Backup files
 *.backup
 *.bak

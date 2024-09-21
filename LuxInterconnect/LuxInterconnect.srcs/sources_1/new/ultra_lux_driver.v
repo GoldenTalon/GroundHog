@@ -1,5 +1,5 @@
 module driver_state_machine #(
-    parameter INPUT_CLK_FREQ = 300_000_000,  // Input clock frequency in Hz (default is 300 MHz)
+    parameter INPUT_CLK_FREQ = 450_000_000,  // Input clock frequency in Hz (default is 300 MHz)
     parameter STATE_FREQ = 10_000_000        // Desired state transition frequency in Hz (e.g., 10 MHz)
 )(
     input wire clk,                 // Input clock

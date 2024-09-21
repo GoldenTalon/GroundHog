@@ -1,0 +1,25 @@
+$date
+        2024-Sep-17 20:30:09
+$end
+$version
+        Vivado v2023.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " design_1_i/encoder_counter_0_counter [31:0] $end
+$var reg 1 B _TRIGGER $end
+$var reg 1 C _WINDOW $end
+$var reg 1 D _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010000 "
+0B
+1C
+0D
+$end
+#512
+1B

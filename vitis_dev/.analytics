@@ -1,0 +1,9 @@
+timestamp=[2024-09-21 14:54:23], mode=WORKBENCH_START, duration=0:00:12.481, duration_ms=12481, data={}
+timestamp=[2024-09-21 14:54:23], mode=WORKBENCH_UI_INIT, duration=0:00:00.027, duration_ms=27, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-09-21 14:54:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.604, duration_ms=1604, data={}
+timestamp=[2024-09-21 14:57:08], mode=APP_CREATION, duration=0:00:07.168, duration_ms=7168, data={name=groundhog, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=C:\FPGA_Projects\GroundHog\vitis_dev\groundhog\export\groundhog\groundhog.xpfm, application_type=application}
+timestamp=[2024-09-21 14:57:47], mode=APP_CREATION, duration=0:00:04.887, duration_ms=4887, data={name=gh0, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=groundhog, application_type=application}
+timestamp=[2024-09-21 15:02:06], mode=PLATFORM_GENERATION, duration=0:00:06.164, duration_ms=6164, data={name=groundhog}
+timestamp=[2024-09-21 15:02:07], mode=BUILD, duration=0:00:00.995, duration_ms=995, data={name=gh0, configuration=Debug, clean_build=false}
+timestamp=[2024-09-21 15:02:46], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=gh0, configuration=Release, clean_build=false}
+timestamp=[2024-09-21 15:02:46], mode=BUILD, duration=0:00:00.132, duration_ms=132, data={name=gh0_system, configuration=Release, clean_build=false}

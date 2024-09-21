@@ -34,26 +34,26 @@ module var_ultra_lux #(
             cycles_for_total_states <= INPUT_CLK_FREQ / state_freq;
 
             // Convert tau (in nanoseconds) to clock cycles
-            cycles_per_all_off_state <= (INPUT_CLK_FREQ / 1_000_000) * tau / 1_000; // Proper scaling in Verilog integer arithmetic
+            cycles_per_all_off_state <= tau; // Proper scaling in Verilog integer arithmetic
             // Calculate the number of cycles for the "on" states
             cycles_per_on_state <= (cycles_for_total_states - (cycles_per_all_off_state * 2)) / 2;
         end else begin
             cycles_for_total_states <= INPUT_CLK_FREQ / state_freq;
-            cycles_per_all_off_state <= (INPUT_CLK_FREQ / 1_000_000) * tau / 1_000; // Proper scaling in Verilog integer arithmetic
+            cycles_per_all_off_state <=  tau; // Proper scaling in Verilog integer arithmetic
             cycles_per_on_state <= (cycles_for_total_states - (cycles_per_all_off_state * 2)) / 2;
 
-            if (cycles_per_all_off_state >= cycles_per_on_state) begin
+            if (cycles_per_all_off_state*2 > cycles_for_total_states) begin
                 current_state <= S0;
             end else begin
                 if (current_state == S0 || current_state == S2) begin
-                    if (counter >= cycles_per_all_off_state) begin
+                    if (counter > cycles_per_all_off_state) begin
                         counter <= 0;
                         current_state <= next_state;
                     end else begin
                         counter <= counter + 1;
                     end
                 end else if (current_state == S1 || current_state == S3) begin
-                    if (counter >= cycles_per_on_state) begin
+                    if (counter > cycles_per_on_state) begin
                         counter <= 0;
                         current_state <= next_state;
                     end else begin
