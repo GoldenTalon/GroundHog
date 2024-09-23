@@ -1,0 +1,17 @@
+04:53:41 **** Incremental Build of configuration Release for project gh_3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -IC:/FPGA_Projects/GroundHog/vitis_dev/gh_0/export/gh_0/sw/gh_0/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gh_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/FPGA_Projects/GroundHog/vitis_dev/gh_0/export/gh_0/sw/gh_0/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gh_3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+e:/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: gh_3.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+e:/vitis/2023.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/12.2.0/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2352 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: gh_3.elf] Error 1
+
+04:53:41 Build Finished (took 496ms)
+

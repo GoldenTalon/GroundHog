@@ -1,0 +1,811 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Sep 19 20:26:35 2024
+# Process ID: 18328
+# Current directory: C:/FPGA_Projects/GroundHog/LuxInterconnect
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4856 C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.xpr
+# Log file: C:/FPGA_Projects/GroundHog/LuxInterconnect/vivado.log
+# Journal file: C:/FPGA_Projects/GroundHog/LuxInterconnect\vivado.jou
+# Running On: DESKTOP-FM3EGBE, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34278 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.ip_user_files'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-151] The current board 'digilentinc.com::basys3:1.2' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA_Projects/GroundHog/IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA_Projects/ip_repo_lux'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2627.320 ; gain = 562.398
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Sep 19 20:27:37 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:driver_state_machine:1.0 - driver_state_machine_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_5
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_5: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:module_ref:var_ultra_lux:1.0 - var_ultra_lux_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:module_ref:encoder_counter:1.0 - encoder_counter_0
+Successfully read diagram <design_1> from block design file <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2779.355 ; gain = 135.039
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2023.1
+  **** Build date : May  7 2023 at 15:26:57
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+Warning: Cannot create '3000:arm' GDB server: An attempt was made to access a socket in a way forbidden by its access permissions
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2023.1.0
+  ****** Build date   : Apr 10 2023-11:59:24
+    **** Build number : 2023.1.1681142364
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 2829.375 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/ila_5' at location 'uuid_FF7F833C0DDF5D3D9A0B36D01F1AA5CD' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+expected number but got ""
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.CONST_VAL' method. expected number but got ""
+startgroup
+set_property CONFIG.CONST_VAL {20000000} [get_bd_cells xlconstant_0]
+endgroup
+save_bd_design
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Sep 19 20:35:54 2024] Launched synth_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 20:35:54 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3127.773 ; gain = 232.844
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'C_S_AXI4_ID_WIDTH' of cell '/axi_quad_spi_0' is ignored
+endgroup
+set_property location {3 573 -62} [get_bd_cells axi_quad_spi_0]
+update_gui_for_PARAM_VALUE.C_XIP_MODE- xip_mode: 0 spi_mode: 0 xip_perf_mode: 1
+update_gui_for_PARAM_VALUE.C_XIP_PERF_MODE- xip_mode: 0 xip_perf_mode: 1 axi4_interface: 0
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {qspi_flash ( QSPI Flash ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_quad_spi_0/SPI_0]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_quad_spi_0]
+INFO: [board_rule 100-100] set_property CONFIG.QSPI_BOARD_INTERFACE qspi_flash [get_bd_cells /axi_quad_spi_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 qspi_flash
+INFO: [BoardRule 102-9] connect_bd_intf_net /qspi_flash /axi_quad_spi_0/SPI_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ahblite_axi_bridge:3.0 ahblite_axi_bridge_0
+endgroup
+delete_bd_objs [get_bd_cells ahblite_axi_bridge_0]
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {98.066} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {450} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {2.250} \
+] [get_bd_cells clk_wiz_0]
+endgroup
+update_module_reference design_1_var_ultra_lux_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_var_ultra_lux_0_0 to use current project options
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+reset_run design_1_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/axi_quad_spi_0/ext_spi_clk
+/axi_quad_spi_0/s_axi_aclk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd 
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_quad_spi_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_var_ultra_lux_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_quad_spi_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_var_ultra_lux_0_0
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+delete_bd_objs [get_bd_intf_nets axi_quad_spi_0_SPI_0] [get_bd_cells axi_quad_spi_0]
+delete_bd_objs [get_bd_intf_ports qspi_flash]
+save_bd_design
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block var_ultra_lux_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_var_ultra_lux_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_var_ultra_lux_0_0
+[Thu Sep 19 20:48:21 2024] Launched design_1_clk_wiz_0_0_synth_1, design_1_var_ultra_lux_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_clk_wiz_0_0_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_var_ultra_lux_0_0_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_var_ultra_lux_0_0_synth_1/runme.log
+synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 20:48:21 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3345.629 ; gain = 0.000
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+ERROR: [Labtools 27-2312] Device xc7a35t_0 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target.
+Use open_hw_target to re-register the hardware device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3347.477 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_hw_device' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2023.1.0
+  ****** Build date   : Apr 10 2023-11:59:24
+    **** Build number : 2023.1.1681142364
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 3347.477 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/ila_5' at location 'uuid_FF7F833C0DDF5D3D9A0B36D01F1AA5CD' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_encoder_counter_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_encoder_counter_0_0 to use current project options
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+regenerate_bd_layout
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block encoder_counter_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_encoder_counter_0_0
+[Thu Sep 19 21:06:17 2024] Launched design_1_encoder_counter_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_encoder_counter_0_0_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_encoder_counter_0_0_synth_1/runme.log
+synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 21:06:17 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:13:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:13:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:13:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:13:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:13:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:13:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:13:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:13:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:14:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:14:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:14:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:14:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:14:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:14:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:14:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:14:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Sep-19 21:14:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Sep-19 21:14:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+update_module_reference design_1_var_ultra_lux_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_var_ultra_lux_0_0 to use current project options
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3354.836 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block var_ultra_lux_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_var_ultra_lux_0_0
+[Thu Sep 19 21:21:04 2024] Launched design_1_var_ultra_lux_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_var_ultra_lux_0_0_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_var_ultra_lux_0_0_synth_1/runme.log
+synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 21:21:04 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3354.836 ; gain = 0.000
+update_module_reference design_1_driver_state_machine_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_driver_state_machine_0_1_synth_1
+
+INFO: [IP_Flow 19-3420] Updated design_1_driver_state_machine_0_1 to use current project options
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block driver_state_machine_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_driver_state_machine_0_1
+[Thu Sep 19 21:23:17 2024] Launched design_1_driver_state_machine_0_1_synth_1, synth_1...
+Run output will be captured here:
+design_1_driver_state_machine_0_1_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_driver_state_machine_0_1_synth_1/runme.log
+synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 21:23:17 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets clk_0_1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins ila_5/clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins driver_state_machine_0/clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins var_ultra_lux_0/clk]
+delete_bd_objs [get_bd_cells ila_5]
+save_bd_design
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /var_ultra_lux_0/reset (associated clock /var_ultra_lux_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /driver_state_machine_0/reset (associated clock /driver_state_machine_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Sep 19 21:34:16 2024] Launched synth_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 21:34:16 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Sep 19 21:40:22 2024] Launched synth_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 21:40:22 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3378.520 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 270 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'design_1_wrapper' is not ideal for floorplanning, since the cellview 'design_1_var_ultra_lux_0_0_var_ultra_lux' defined in file 'design_1_var_ultra_lux_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 4044.762 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 4044.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4044.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 4145.840 ; gain = 767.320
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2023.1.0
+  ****** Build date   : Apr 10 2023-11:59:24
+    **** Build number : 2023.1.1681142364
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 4185.141 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B30CB6A
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+update_module_reference design_1_var_ultra_lux_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_var_ultra_lux_0_0 to use current project options
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /driver_state_machine_0/reset (associated clock /driver_state_machine_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /var_ultra_lux_0/reset (associated clock /var_ultra_lux_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block var_ultra_lux_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_var_ultra_lux_0_0
+[Thu Sep 19 21:45:29 2024] Launched design_1_var_ultra_lux_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_var_ultra_lux_0_0_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_var_ultra_lux_0_0_synth_1/runme.log
+synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 21:45:29 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property CONFIG.INPUT_CLK_FREQ {300000000} [get_bd_cells var_ultra_lux_0]
+endgroup
+update_module_reference design_1_var_ultra_lux_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_var_ultra_lux_0_0 to use current project options
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /driver_state_machine_0/reset (associated clock /driver_state_machine_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /var_ultra_lux_0/reset (associated clock /var_ultra_lux_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block var_ultra_lux_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_var_ultra_lux_0_0
+[Thu Sep 19 21:54:32 2024] Launched design_1_var_ultra_lux_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_var_ultra_lux_0_0_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_var_ultra_lux_0_0_synth_1/runme.log
+synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 21:54:32 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_cells driver_state_machine_0]
+regenerate_bd_layout
+update_compile_order -fileset sources_1
+expected number but got ""
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.CONST_VAL' method. expected number but got ""
+startgroup
+set_property CONFIG.CONST_VAL {2000000} [get_bd_cells xlconstant_0]
+endgroup
+save_bd_design
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /var_ultra_lux_0/reset (associated clock /var_ultra_lux_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Sep 19 22:03:31 2024] Launched synth_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 22:03:31 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_var_ultra_lux_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+Upgrading 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_var_ultra_lux_0_0 to use current project options
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 4205.156 ; gain = 1.270
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /encoder_counter_0/rst (associated clock /encoder_counter_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1343] Reset pin /var_ultra_lux_0/reset (associated clock /var_ultra_lux_0/clk) is connected to reset source /sw (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block var_ultra_lux_0 .
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_var_ultra_lux_0_0
+[Thu Sep 19 22:08:36 2024] Launched design_1_var_ultra_lux_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_var_ultra_lux_0_0_synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/design_1_var_ultra_lux_0_0_synth_1/runme.log
+synth_1: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 22:08:36 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets microblaze_0_Clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins encoder_counter_0/clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins var_ultra_lux_0/clk]
+save_bd_design
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\FPGA_Projects\GroundHog\LuxInterconnect\LuxInterconnect.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Sep 19 22:14:11 2024] Launched synth_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/runme.log
+[Thu Sep 19 22:14:11 2024] Launched impl_1...
+Run output will be captured here: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.

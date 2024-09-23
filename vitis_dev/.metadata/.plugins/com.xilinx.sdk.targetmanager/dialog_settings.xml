@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Basys3 210183B30CB6A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Basys3-210183B30CB6A-0362d093-0&quot;}}]}"/>
+	<item key="gh_3_system-bitFile" value="${project_loc:gh_3}/_ide/bitstream/gh_0.bit"/>
+	<item key="gh_3_system-bmmFile" value="${project_loc:gh_3}/_ide/bitstream/gh_0.mmi"/>
+	<item key="gh_3_system-target" value="Local"/>
+	<item key="gh_3_system-device" value="Auto Detect"/>
+	<item key="gh_3_system-partial_bit" value="false"/>
+	<item key="gh_3_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="gh_3_system"/>
+	<item key="gh_3_system-microblaze_0-initElf" value="bootloop"/>
+</section>

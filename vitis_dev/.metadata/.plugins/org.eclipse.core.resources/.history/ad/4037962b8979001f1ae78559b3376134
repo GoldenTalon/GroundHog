@@ -1,0 +1,94 @@
+
+#include "xparameters.h"  // Definitions for peripheral base addresses
+#include "xil_io.h"       // I/O functions for memory-mapped I/O
+#include "sleep.h"        // Sleep functions
+
+#define LED_ADDR XPAR_AXI_GPIO_0_BASEADDR // Memory-mapped I/O address for the 16-bit LEDs
+
+void delay(int cycles) {
+    for (int i = 0; i < cycles; i++) {
+        asm("nop");
+    }
+}
+
+int main() {
+    u16 led_pattern = 0x0001; // Start with the first LED on
+
+    while (1) {
+        // Write the current LED pattern to the memory-mapped LED address
+        Xil_Out16(LED_ADDR, led_pattern);
+
+        // Shift the LED pattern left by one, wrapping around after 16 bits
+        led_pattern = (led_pattern << 1) | ((led_pattern >> 15) & 0x0001);
+
+        // Delay to slow down the blinking
+        sleep(1); // Delay for 1 second
+    }
+
+    return 0;
+}
+
+/*
+#include "xparameters.h"  // Definitions for peripheral base addresses
+#include "xspi.h"         // XSpi driver
+#include "xil_io.h"       // I/O functions for memory-mapped I/O
+#include "sleep.h"        // Sleep functions
+
+#define SPI_DEVICE_ID XPAR_SPI_0_DEVICE_ID  // SPI device ID
+#define QSPI_BASE_ADDR XPAR_SPI_0_BASEADDR  // Base address for QSPI
+
+XSpi SpiInstance;  // Create an instance of the XSpi driver
+
+int spi_init(XSpi *SpiInstancePtr, u16 DeviceId) {
+    int Status;
+    XSpi_Config *Config;
+
+    // Initialize the SPI driver
+    Config = XSpi_LookupConfig(DeviceId);
+    if (NULL == Config) {
+        return XST_FAILURE;
+    }
+
+    Status = XSpi_CfgInitialize(SpiInstancePtr, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Set the SPI device as a master
+    XSpi_SetOptions(SpiInstancePtr, XSP_MASTER_OPTION);
+
+    // Start the SPI device
+    XSpi_Start(SpiInstancePtr);
+
+    // Disable global interrupts for simplicity
+    XSpi_IntrGlobalDisable(SpiInstancePtr);
+
+    return XST_SUCCESS;
+}
+
+int main() {
+    int Status;
+
+    // Initialize the SPI driver
+    Status = spi_init(&SpiInstance, SPI_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+        xil_printf("SPI initialization failed\n");
+        return XST_FAILURE;
+    }
+
+    // Example data to send over QSPI
+    u8 SendBuffer[2] = {0xAA, 0x55};  // Data to send
+    u8 ReceiveBuffer[2];              // Buffer for received data
+
+    // Write to the QSPI device
+    XSpi_Transfer(&SpiInstance, SendBuffer, ReceiveBuffer, 2);
+
+    // Add a delay
+    sleep(1);  // Delay for 1 second
+
+    // You can add more transactions as needed
+
+    return 0;
+}
+
+*/
