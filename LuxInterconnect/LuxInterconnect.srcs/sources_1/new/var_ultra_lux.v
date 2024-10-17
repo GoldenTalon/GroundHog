@@ -4,7 +4,7 @@ module var_ultra_lux #(
     input wire clk,                 // Input clock
     input wire reset,               // Reset signal
     input wire [31:0] tau,          // TAU as an input (in nanoseconds)
-    input wire [31:0] state_freq,   // Dynamic state transition frequency input in Hz (up to 50 MHz)
+    input wire signed [31:0] state_freq,   // Dynamic state transition frequency input in Hz (up to 50 MHz)
     output reg [1:0] lux_state_out  // 2-bit state output
 );
 

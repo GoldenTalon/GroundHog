@@ -1,0 +1,8 @@
+Nothing to build in platform 'gh_d_1'
+
+03:32:15 **** Incremental Build of configuration Debug for project gh_6 ****
+make all 
+make: Nothing to be done for 'all'.
+03:32:15 **** Build of configuration Debug for project gh_6_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

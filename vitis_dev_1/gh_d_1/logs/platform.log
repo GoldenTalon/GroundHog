@@ -1,0 +1,994 @@
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:54::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-09-25.03:27:54::SCWPlatform::Opened new HwDB with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2024-09-25.03:27:54::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1"
+		}]
+}
+TRACE::2024-09-25.03:27:54::SCWPlatform::Boot application domains not present, creating them
+TRACE::2024-09-25.03:27:54::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2024-09-25.03:27:54::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1"
+		}]
+}
+TRACE::2024-09-25.03:27:54::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1"
+		}]
+}
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:54::SCWDomain::checking for install qemu data   : 
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:54::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:54::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-09-25.03:27:54::SCWMssOS::No sw design opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:54::SCWMssOS::mss does not exists at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:54::SCWMssOS::Creating sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:54::SCWMssOS::Adding the swdes entry, created swdb C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:54::SCWMssOS::updating the scw layer changes to swdes at   C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:54::SCWMssOS::Writing mss at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:54::SCWMssOS::Completed writing the mss file at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-09-25.03:27:54::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-09-25.03:27:54::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-09-25.03:27:54::SCWMssOS::Completed writing the mss file at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-09-25.03:27:54::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2024-09-25.03:27:55::SCWMssOS::Saving the mss changes C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2024-09-25.03:27:55::SCWMssOS::Writing the mss file completed C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::Commit changes completed.
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:55::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:55::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:55::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:55::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:55::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:55::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"74fa8e3f36a22c0eabb681acb7a68e4d",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-09-25.03:27:55::SCWPlatform::Started generating the artifacts platform gh_d_1
+TRACE::2024-09-25.03:27:55::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-09-25.03:27:55::SCWPlatform::Started generating the artifacts for system configuration gh_d_1
+LOG::2024-09-25.03:27:55::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2024-09-25.03:27:55::SCWSystem::Not a boot domain 
+LOG::2024-09-25.03:27:55::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-09-25.03:27:55::SCWDomain::Generating domain artifcats
+TRACE::2024-09-25.03:27:55::SCWMssOS::Generating standalone artifcats
+TRACE::2024-09-25.03:27:55::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:55::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:55::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::Completed writing the mss file at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-09-25.03:27:55::SCWMssOS::Mss edits present, copying mssfile into export location C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-09-25.03:27:55::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-09-25.03:27:55::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2024-09-25.03:27:55::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-09-25.03:27:55::SCWMssOS::Copying to export directory.
+TRACE::2024-09-25.03:27:55::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-09-25.03:27:55::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-09-25.03:27:55::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-09-25.03:27:55::SCWSystem::Completed Processing the sysconfig gh_d_1
+LOG::2024-09-25.03:27:55::SCWPlatform::Completed generating the artifacts for system configuration gh_d_1
+TRACE::2024-09-25.03:27:55::SCWPlatform::Started preparing the platform 
+TRACE::2024-09-25.03:27:55::SCWSystem::Writing the bif file for system config gh_d_1
+TRACE::2024-09-25.03:27:55::SCWSystem::dir created 
+TRACE::2024-09-25.03:27:55::SCWSystem::Writing the bif 
+TRACE::2024-09-25.03:27:55::SCWPlatform::Started writing the spfm file 
+TRACE::2024-09-25.03:27:55::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-09-25.03:27:55::SCWPlatform::Completed generating the platform
+TRACE::2024-09-25.03:27:55::SCWMssOS::Saving the mss changes C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-09-25.03:27:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-09-25.03:27:55::SCWMssOS::Commit changes completed.
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:55::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:55::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:55::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:55::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:55::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:55::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:55::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:55::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"74fa8e3f36a22c0eabb681acb7a68e4d",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-09-25.03:27:55::SCWPlatform::updated the xpfm file.
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::Saving the mss changes C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-09-25.03:27:56::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-09-25.03:27:56::SCWMssOS::Commit changes completed.
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"74fa8e3f36a22c0eabb681acb7a68e4d",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::Saving the mss changes C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-09-25.03:27:56::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-09-25.03:27:56::SCWMssOS::Commit changes completed.
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"74fa8e3f36a22c0eabb681acb7a68e4d",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-09-25.03:27:56::SCWPlatform::Started generating the artifacts platform gh_d_1
+TRACE::2024-09-25.03:27:56::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-09-25.03:27:56::SCWPlatform::Started generating the artifacts for system configuration gh_d_1
+LOG::2024-09-25.03:27:56::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-09-25.03:27:56::SCWDomain::Generating domain artifcats
+TRACE::2024-09-25.03:27:56::SCWMssOS::Generating standalone artifcats
+TRACE::2024-09-25.03:27:56::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::Completed writing the mss file at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-09-25.03:27:56::SCWMssOS::Mss edits present, copying mssfile into export location C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-09-25.03:27:56::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-09-25.03:27:56::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2024-09-25.03:27:56::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-09-25.03:27:56::SCWMssOS::Copying to export directory.
+TRACE::2024-09-25.03:27:56::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-09-25.03:27:56::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-09-25.03:27:56::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-09-25.03:27:56::SCWSystem::Completed Processing the sysconfig gh_d_1
+LOG::2024-09-25.03:27:56::SCWPlatform::Completed generating the artifacts for system configuration gh_d_1
+TRACE::2024-09-25.03:27:56::SCWPlatform::Started preparing the platform 
+TRACE::2024-09-25.03:27:56::SCWSystem::Writing the bif file for system config gh_d_1
+TRACE::2024-09-25.03:27:56::SCWSystem::dir created 
+TRACE::2024-09-25.03:27:56::SCWSystem::Writing the bif 
+TRACE::2024-09-25.03:27:56::SCWPlatform::Started writing the spfm file 
+TRACE::2024-09-25.03:27:56::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-09-25.03:27:56::SCWPlatform::Completed generating the platform
+TRACE::2024-09-25.03:27:56::SCWMssOS::Saving the mss changes C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-09-25.03:27:56::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-09-25.03:27:56::SCWMssOS::Commit changes completed.
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:27:56::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:27:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:27:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:27:56::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:27:56::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:27:56::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"74fa8e3f36a22c0eabb681acb7a68e4d",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-09-25.03:27:56::SCWPlatform::updated the xpfm file.
+LOG::2024-09-25.03:30:24::SCWPlatform::Started generating the artifacts platform gh_d_1
+TRACE::2024-09-25.03:30:24::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-09-25.03:30:24::SCWPlatform::Started generating the artifacts for system configuration gh_d_1
+LOG::2024-09-25.03:30:24::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2024-09-25.03:30:24::SCWSystem::Not a boot domain 
+LOG::2024-09-25.03:30:24::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-09-25.03:30:24::SCWDomain::Generating domain artifcats
+TRACE::2024-09-25.03:30:24::SCWMssOS::Generating standalone artifcats
+TRACE::2024-09-25.03:30:24::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-09-25.03:30:24::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:24::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:24::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:24::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:30:24::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:24::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:30:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:30:24::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:30:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:30:24::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:24::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:24::SCWMssOS::Completed writing the mss file at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-09-25.03:30:24::SCWMssOS::Mss edits present, copying mssfile into export location C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:24::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-09-25.03:30:24::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-09-25.03:30:24::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2024-09-25.03:30:24::SCWMssOS::doing bsp build ... 
+TRACE::2024-09-25.03:30:24::SCWMssOS::System Command Ran  C: & cd  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2024-09-25.03:30:24::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-09-25.03:30:24::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-09-25.03:30:24::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_17/src"
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_17/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-09-25.03:30:24::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-09-25.03:30:24::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_1/src"
+
+TRACE::2024-09-25.03:30:24::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-09-25.03:30:24::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2024-09-25.03:30:24::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-09-25.03:30:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-09-25.03:30:25::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-09-25.03:30:25::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-09-25.03:30:25::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-09-25.03:30:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_17/src"
+
+TRACE::2024-09-25.03:30:25::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_17/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-09-25.03:30:25::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-09-25.03:30:25::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-09-25.03:30:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v8_1/src"
+
+TRACE::2024-09-25.03:30:25::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-09-25.03:30:25::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-09-25.03:30:25::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2024-09-25.03:30:26::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2024-09-25.03:30:26::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2024-09-25.03:30:26::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2024-09-25.03:30:26::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2024-09-25.03:30:26::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2024-09-25.03:30:26::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2024-09-25.03:30:26::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2024-09-25.03:30:26::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2024-09-25.03:30:26::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2024-09-25.03:30:26::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2024-09-25.03:30:26::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2024-09-25.03:30:26::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2024-09-25.03:30:26::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+TRACE::2024-09-25.03:30:26::SCWMssOS::/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+TRACE::2024-09-25.03:30:26::SCWMssOS::aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/xil_testio.o microb
+TRACE::2024-09-25.03:30:26::SCWMssOS::laze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib
+TRACE::2024-09-25.03:30:26::SCWMssOS::/xplatform_info.o
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::Copying to export directory.
+TRACE::2024-09-25.03:30:26::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-09-25.03:30:26::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-09-25.03:30:26::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-09-25.03:30:26::SCWSystem::Completed Processing the sysconfig gh_d_1
+LOG::2024-09-25.03:30:26::SCWPlatform::Completed generating the artifacts for system configuration gh_d_1
+TRACE::2024-09-25.03:30:26::SCWPlatform::Started preparing the platform 
+TRACE::2024-09-25.03:30:26::SCWSystem::Writing the bif file for system config gh_d_1
+TRACE::2024-09-25.03:30:26::SCWSystem::dir created 
+TRACE::2024-09-25.03:30:26::SCWSystem::Writing the bif 
+TRACE::2024-09-25.03:30:26::SCWPlatform::Started writing the spfm file 
+TRACE::2024-09-25.03:30:26::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-09-25.03:30:26::SCWPlatform::Completed generating the platform
+TRACE::2024-09-25.03:30:26::SCWMssOS::Saving the mss changes C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:26::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-09-25.03:30:26::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-09-25.03:30:26::SCWMssOS::Commit changes completed.
+TRACE::2024-09-25.03:30:26::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:30:26::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:30:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:30:26::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:30:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:30:26::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:26::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:26::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:30:26::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:30:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:30:26::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:30:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:30:26::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:26::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:26::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:30:26::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:26::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:30:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:30:26::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:30:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:30:26::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:26::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:30:26::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:26::SCWWriter::formatted JSON is {
+	"platformName":	"gh_d_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"gh_d_1",
+	"platHandOff":	"C:/FPGA_Projects/GroundHog/LuxInterconnect/gh_d_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/gh_d_1.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"gh_d_1",
+	"systems":	[{
+			"systemName":	"gh_d_1",
+			"systemDesc":	"gh_d_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"gh_d_1",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"74fa8e3f36a22c0eabb681acb7a68e4d",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-09-25.03:30:26::SCWPlatform::updated the xpfm file.
+TRACE::2024-09-25.03:30:27::SCWPlatform::Trying to open the hw design at C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:27::SCWPlatform::DSA given C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:27::SCWPlatform::DSA absoulate path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:27::SCWPlatform::DSA directory C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw
+TRACE::2024-09-25.03:30:27::SCWPlatform:: Platform Path C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/hw/gh_d_1.xsa
+TRACE::2024-09-25.03:30:27::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2024-09-25.03:30:27::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2024-09-25.03:30:27::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2024-09-25.03:30:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-25.03:30:27::SCWMssOS::Checking the sw design at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-09-25.03:30:27::SCWMssOS::DEBUG:  swdes dump  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-09-25.03:30:27::SCWMssOS::Sw design exists and opened at  C:/FPGA_Projects/GroundHog/vitis_dev_1/gh_d_1/microblaze_0/standalone_microblaze_0/bsp/system.mss

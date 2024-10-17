@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="gh5" location="C:/FPGA_Projects/GroundHog/vitis_dev/gh5" platform="C:/FPGA_Projects/GroundHog/vitis_dev/GroudHog/export/GroudHog/GroudHog.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="gh5_system" sysConfig="GroudHog" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="7802e3289e6f36eed661ddd6c626c01f">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1139643887">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1682293146" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

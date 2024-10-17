@@ -3,7 +3,6 @@
 	<name>gh_3</name>
 	<comment>Created by Vitis v2023.1</comment>
 	<projects>
-		<project>gh_0</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

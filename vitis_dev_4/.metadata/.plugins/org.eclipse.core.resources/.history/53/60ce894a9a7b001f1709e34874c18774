@@ -1,0 +1,92 @@
+#include "xparameters.h"  // Definitions for peripheral base addresses
+#include "xil_io.h"       // I/O functions for memory-mapped I/O
+#include "sleep.h"        // Sleep functions
+
+//#define LED_ADDR      XPAR_AXI_GPIO_0_BASEADDR     // Memory-mapped I/O address for the 16-bit LEDs
+#define SPI_BASE_ADDR XPAR_ST7735_AXI_SPI_0_BASEADDR                      // Base address for the AXI Lite SPI module
+
+// SPI Register Offsets
+#define SPI_CMD_REG_OFFSET    0x0  // Command Register
+#define SPI_DATA_REG_OFFSET   0x4  // Data Register
+#define SPI_STATUS_REG_OFFSET 0x8  // Status Register
+
+// SPI Status Register Bits
+#define SPI_STATUS_BUSY_MASK  0x01 // Busy flag mask
+
+void delay(int cycles) {
+    for (int i = 0; i < cycles; i++) {
+        asm("nop");
+    }
+}
+
+void send_spi_command(u8 command) {
+    // Wait until SPI module is not busy
+    //while (Xil_In32(SPI_BASE_ADDR + SPI_STATUS_REG_OFFSET) & SPI_STATUS_BUSY_MASK);
+
+    // Write the command to the command register
+    //Xil_Out32(SPI_BASE_ADDR + SPI_CMD_REG_OFFSET, command);
+    Xil_Out32(SPI_BASE_ADDR, command);
+}
+
+void send_spi_data(u8 data) {
+    // Wait until SPI module is not busy
+    while (Xil_In32(SPI_BASE_ADDR + SPI_STATUS_REG_OFFSET) & SPI_STATUS_BUSY_MASK);
+
+    // Write the data to the data register
+    Xil_Out32(SPI_BASE_ADDR + SPI_DATA_REG_OFFSET, data);
+}
+
+void init_display() {
+    // Example initialization sequence for ST7735
+    // This sequence may vary depending on your specific display and requirements.
+    // Refer to the ST7735 datasheet for the correct initialization sequence.
+
+    send_spi_command(0x01); // Software Reset
+    delay(10000);               // Delay for reset
+    send_spi_command(0x11); // Sleep Out
+    delay(10000);
+    send_spi_command(0x29); // Display ON
+}
+
+int main() {
+    //u16 led_pattern = 0x0001; // Start with the first LED on
+
+    // Initialize the display
+    init_display();
+
+    // Main loop
+    while (1) {
+        // Write the current LED pattern to the memory-mapped LED address
+        //Xil_Out16(LED_ADDR, led_pattern);
+
+        // Shift the LED pattern left by one, wrapping around after 16 bits
+        //led_pattern = (led_pattern << 1) | ((led_pattern >> 15) & 0x0001);
+
+        // Example: Update the display with some data
+        // Here we send a command and data to the display in each loop iteration
+        send_spi_command(0x2A); // Column Address Set
+        send_spi_data(0x00);    // Start column high byte
+        send_spi_data(0x02);    // Start column low byte
+        send_spi_data(0x00);    // End column high byte
+        send_spi_data(0x81);    // End column low byte
+
+        send_spi_command(0x2B); // Row Address Set
+        send_spi_data(0x00);    // Start row high byte
+        send_spi_data(0x01);    // Start row low byte
+        send_spi_data(0x00);    // End row high byte
+        send_spi_data(0xA0);    // End row low byte
+
+        send_spi_command(0x2C); // Memory Write
+        // Send pixel data (example: fill with a color)
+        // For simplicity, we'll send the same data multiple times
+        for (int i = 0; i < 1000; i++) {
+            send_spi_data(0xF8); // Red pixel data high byte
+            send_spi_data(0x00); // Red pixel data low byte
+        }
+
+        // Delay to slow down the blinking and display updates
+        delay(10000); // Delay for 1 second
+    }
+
+    return 0;
+}

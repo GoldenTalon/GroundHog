@@ -1,0 +1,245 @@
+04:08:47 DEBUG : Logs will be stored at 'C:/FPGA_Projects/GroundHog/vitis_dev_3/IDE.log'.
+04:08:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\FPGA_Projects\GroundHog\vitis_dev_3\temp_xsdb_launch_script.tcl
+04:08:52 INFO  : Registering command handlers for Vitis TCF services
+04:08:54 INFO  : Platform repository initialization has completed.
+04:08:55 INFO  : XSCT server has started successfully.
+04:08:55 INFO  : Successfully done setting XSCT server connection channel  
+04:08:55 INFO  : plnx-install-location is set to ''
+04:08:55 INFO  : Successfully done setting workspace for the tool. 
+04:08:55 INFO  : Successfully done query RDI_DATADIR 
+04:09:48 INFO  : Result from executing command 'getProjects': gh_d_3
+04:09:48 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+04:09:49 WARN  : An unexpected exception occurred in the module 'platform project logging'
+04:09:51 INFO  : Platform 'gh_d_3' is added to custom repositories.
+04:09:57 INFO  : Platform 'gh_d_3' is added to custom repositories.
+04:10:41 INFO  : Result from executing command 'getProjects': gh_d_3
+04:10:41 INFO  : Result from executing command 'getPlatforms': gh_d_3|C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/gh_d_3.xpfm;xilinx_vck190_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+04:10:42 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:10:49 INFO  : Build configuration of 'gh_d_3_0_system' is updated to 'Release'
+04:10:49 INFO  : Build configuration of system project is automatically updated to 'Release'.
+04:10:49 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:11:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:11:04 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+04:11:04 INFO  : 'jtag frequency' command is executed.
+04:11:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+04:11:05 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit"
+04:11:05 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:05 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa'.
+04:11:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:11:05 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:05 INFO  : System reset is completed.
+04:11:08 INFO  : 'after 3000' command is executed.
+04:11:08 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:08 INFO  : The application 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf' is downloaded to processor 'microblaze_0'.
+04:11:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf
+----------------End of Script----------------
+
+04:11:09 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:09 INFO  : 'con' command is executed.
+04:11:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:11:09 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_3\gh_d_3_0_system\_ide\scripts\debugger_gh_d_3_0-default.tcl'
+04:11:20 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:11:30 INFO  : Disconnected from the channel tcfchan#2.
+04:11:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:11:32 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+04:11:32 INFO  : 'jtag frequency' command is executed.
+04:11:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+04:11:32 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit"
+04:11:32 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:32 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa'.
+04:11:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:11:32 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:32 INFO  : System reset is completed.
+04:11:35 INFO  : 'after 3000' command is executed.
+04:11:35 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:35 INFO  : The application 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf' is downloaded to processor 'microblaze_0'.
+04:11:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf
+----------------End of Script----------------
+
+04:11:36 INFO  : Context for processor 'microblaze_0' is selected.
+04:11:36 INFO  : 'con' command is executed.
+04:11:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:11:36 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_3\gh_d_3_0_system\_ide\scripts\debugger_gh_d_3_0-default.tcl'
+04:11:53 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:12:11 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:12:20 INFO  : Disconnected from the channel tcfchan#3.
+04:12:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:12:21 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+04:12:21 INFO  : 'jtag frequency' command is executed.
+04:12:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+04:12:21 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit"
+04:12:21 INFO  : Context for processor 'microblaze_0' is selected.
+04:12:21 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa'.
+04:12:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:12:22 INFO  : Context for processor 'microblaze_0' is selected.
+04:12:22 INFO  : System reset is completed.
+04:12:25 INFO  : 'after 3000' command is executed.
+04:12:25 INFO  : Context for processor 'microblaze_0' is selected.
+04:12:25 INFO  : The application 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf' is downloaded to processor 'microblaze_0'.
+04:12:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf
+----------------End of Script----------------
+
+04:12:25 INFO  : Context for processor 'microblaze_0' is selected.
+04:12:25 INFO  : 'con' command is executed.
+04:12:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:12:25 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_3\gh_d_3_0_system\_ide\scripts\debugger_gh_d_3_0-default.tcl'
+04:12:38 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:13:04 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:13:10 INFO  : Disconnected from the channel tcfchan#4.
+04:13:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:13:11 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+04:13:11 INFO  : 'jtag frequency' command is executed.
+04:13:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+04:13:12 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit"
+04:13:12 INFO  : Context for processor 'microblaze_0' is selected.
+04:13:12 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa'.
+04:13:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:13:12 INFO  : Context for processor 'microblaze_0' is selected.
+04:13:12 INFO  : System reset is completed.
+04:13:15 INFO  : 'after 3000' command is executed.
+04:13:15 INFO  : Context for processor 'microblaze_0' is selected.
+04:13:15 INFO  : The application 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf' is downloaded to processor 'microblaze_0'.
+04:13:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf
+----------------End of Script----------------
+
+04:13:15 INFO  : Context for processor 'microblaze_0' is selected.
+04:13:15 INFO  : 'con' command is executed.
+04:13:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:13:15 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_3\gh_d_3_0_system\_ide\scripts\debugger_gh_d_3_0-default.tcl'
+04:13:48 INFO  : Build configuration of 'gh_d_3_0_system' is updated to 'Debug'
+04:13:48 INFO  : Build configuration of system project is automatically updated to 'Debug'.
+04:13:48 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:14:00 INFO  : Disconnected from the channel tcfchan#5.
+04:14:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:14:01 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+04:14:01 INFO  : 'jtag frequency' command is executed.
+04:14:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+04:14:01 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit"
+04:14:02 INFO  : Context for processor 'microblaze_0' is selected.
+04:14:02 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa'.
+04:14:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:14:02 INFO  : Context for processor 'microblaze_0' is selected.
+04:14:02 INFO  : System reset is completed.
+04:14:05 INFO  : 'after 3000' command is executed.
+04:14:05 INFO  : Context for processor 'microblaze_0' is selected.
+04:14:05 INFO  : The application 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf' is downloaded to processor 'microblaze_0'.
+04:14:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf
+----------------End of Script----------------
+
+04:14:05 INFO  : Context for processor 'microblaze_0' is selected.
+04:14:09 INFO  : 'con' command is executed.
+04:14:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:14:09 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_3\gh_d_3_0_system\_ide\scripts\debugger_gh_d_3_0-default.tcl'
+04:14:42 INFO  : Disconnected from the channel tcfchan#6.
+04:14:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:14:45 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+04:14:47 INFO  : 'jtag frequency' command is executed.
+04:14:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+04:14:53 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit"
+04:14:53 INFO  : Context for processor 'microblaze_0' is selected.
+04:14:53 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa'.
+04:14:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:14:53 INFO  : Context for processor 'microblaze_0' is selected.
+04:14:53 INFO  : System reset is completed.
+04:14:56 INFO  : 'after 3000' command is executed.
+04:14:56 INFO  : Context for processor 'microblaze_0' is selected.
+04:14:57 INFO  : The application 'C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf' is downloaded to processor 'microblaze_0'.
+04:14:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/_ide/bitstream/gh_d_3.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/hw/gh_d_3.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0/Release/gh_d_3_0.elf
+----------------End of Script----------------
+
+04:14:57 INFO  : Context for processor 'microblaze_0' is selected.
+04:15:01 INFO  : 'con' command is executed.
+04:15:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:15:01 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_3\gh_d_3_0_system\_ide\scripts\debugger_gh_d_3_0-default.tcl'
+04:18:36 INFO  : Checking for BSP changes to sync application flags for project 'gh_d_3_0'...
+04:49:16 INFO  : Disconnected from the channel tcfchan#7.

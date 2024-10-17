@@ -1,0 +1,20 @@
+Nothing to build in platform 'gh_d_3'
+
+04:18:36 **** Incremental Build of configuration Debug for project gh_d_3_0 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/sw/gh_d_3/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gh_d_3_0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/sw/gh_d_3/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gh_d_3_0.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gh_d_3_0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gh_d_3_0.elf  |tee "gh_d_3_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2504	    272	   3104	   5880	   16f8	gh_d_3_0.elf
+'Finished building: gh_d_3_0.elf.size'
+' '

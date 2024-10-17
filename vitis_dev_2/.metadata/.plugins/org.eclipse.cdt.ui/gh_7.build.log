@@ -1,0 +1,21 @@
+03:48:09 **** Incremental Build of configuration Release for project gh_7 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -IC:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/sw/att_2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gh_7.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/sw/att_2/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gh_7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gh_7.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gh_7.elf  |tee "gh_7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2236	    272	   3108	   5616	   15f0	gh_7.elf
+'Finished building: gh_7.elf.size'
+' '
+
+03:48:10 Build Finished (took 733ms)
+

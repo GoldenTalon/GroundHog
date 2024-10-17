@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../LuxInterconnect.gen/sources_1/bd/design_1/ipshared/30ef" \
+"../../../../LuxInterconnect.srcs/sources_1/new/encoder_counter_increment_change.v" \
+"../../../../LuxInterconnect.srcs/sim_1/new/tb_encoder_counter_increment_change.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

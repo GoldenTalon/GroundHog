@@ -20,3 +20,21 @@ platform generate -quick
 platform generate
 platform clean
 platform generate
+platform active {gh_0}
+platform config -updatehw {C:/FPGA_Projects/GroundHog/vitis_dev/gh_4.xsa}
+platform generate -domains 
+platform config -updatehw {C:/FPGA_Projects/GroundHog/vitis_dev/gh_4.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {C:/FPGA_Projects/GroundHog/LuxInterconnect/groundhog.xsa}
+platform generate -domains 
+platform config -updatehw {C:/FPGA_Projects/GroundHog/LuxInterconnect/GroudHog.xsa}
+platform generate -domains 
+platform config -updatehw {C:/FPGA_Projects/GroundHog/LuxInterconnect/design_1_wrapper.xsa}
+platform generate -domains 
+platform generate -domains 
+platform config -updatehw {C:/FPGA_Projects/GroundHog/LuxInterconnect/groundhog.xsa}
+platform generate -domains 
+platform clean
+platform write

@@ -1,0 +1,6 @@
+20:00:56 **** Incremental Build of configuration Debug for project gh_dl__ps_0_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+20:00:56 Build Finished (took 112ms)
+

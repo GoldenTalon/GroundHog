@@ -9,7 +9,6 @@ create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_
 
 
 ## Switches
-set_property -dict {PACKAGE_PIN L1 IOSTANDARD LVCMOS33} [get_ports sw]
 #set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports {sw[1]}]
 #set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS33 } [get_ports {sw[2]}]
 #set_property -dict { PACKAGE_PIN W17   IOSTANDARD LVCMOS33 } [get_ports {sw[3]}]
@@ -84,8 +83,8 @@ set_property -dict {PACKAGE_PIN L2 IOSTANDARD LVCMOS33} [get_ports {JA[1]}]
 ##Pmod Header JB
 #set_property -dict { PACKAGE_PIN A14   IOSTANDARD LVCMOS33 } [get_ports {JB[0]}];#Sch name = JB1
 #set_property -dict {PACKAGE_PIN A16 IOSTANDARD LVCMOS33} [get_ports {encoder_input_0[0]}]
-set_property -dict {PACKAGE_PIN B15 IOSTANDARD LVCMOS33} [get_ports {encoder_input_0[0]}]
-set_property -dict {PACKAGE_PIN B16 IOSTANDARD LVCMOS33} [get_ports {encoder_input_0[1]}]
+set_property -dict {PACKAGE_PIN A17 IOSTANDARD LVCMOS33} [get_ports {encoder_input_0[0]}]
+set_property -dict {PACKAGE_PIN A15 IOSTANDARD LVCMOS33} [get_ports {encoder_input_0[1]}]
 #set_property -dict { PACKAGE_PIN B16   IOSTANDARD LVCMOS33 } [get_ports {JB[3]}];#Sch name = JB4
 #set_property -dict { PACKAGE_PIN A15   IOSTANDARD LVCMOS33 } [get_ports {JB[4]}];#Sch name = JB7
 #set_property -dict { PACKAGE_PIN A17   IOSTANDARD LVCMOS33 } [get_ports {JB[5]}];#Sch name = JB8
@@ -161,7 +160,56 @@ set_property CONFIG_MODE SPIx4 [current_design]
 
 set_property PULLUP true [get_ports {encoder_input_0[1]}]
 set_property PULLUP true [get_ports {encoder_input_0[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports spi_clk_0]
+set_property IOSTANDARD LVCMOS33 [get_ports spi_cs_n_0]
+set_property IOSTANDARD LVCMOS33 [get_ports spi_dc_0]
+set_property IOSTANDARD LVCMOS33 [get_ports spi_mosi_0]
+
+
+#LCD SCREEN	NODEMCU ESP32
+#5V	    3v3
+#GND	GND
+#LED	5V
+#SCL (SPI Clock)	GPIO18 VSPI SCK (SPI Clock)
+#SDA (SPI Data)	GPIO23 VSPI MOSI (MOSI, Data to Screen)
+#RS (Register Select)	GPIO2 (labelled as DC in Adafruit code)
+#RST (Screen reset)	GPIO4
+#CS (Chip Select : Defined as Slave Select in SPI) If low this device is active on data lines	GPIO5 VSPI SS (Slave Select/ Chip Select)
+
+set_property IOSTANDARD LVCMOS33 [get_ports {st7735_backlight[0]}]
+set_property PACKAGE_PIN A16 [get_ports {st7735_backlight[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {st7735_reset[0]}]
+set_property PACKAGE_PIN P17 [get_ports {st7735_reset[0]}]
+
+set_property PULLUP true [get_ports spi_cs_n_0]
+set_property SLEW SLOW [get_ports spi_cs_n_0]
+set_property SLEW SLOW [get_ports spi_mosi_0]
+set_property PULLDOWN true [get_ports spi_mosi_0]
+set_property PULLDOWN true [get_ports spi_dc_0]
+
+set_property PACKAGE_PIN L17 [get_ports spi_clk_0]
+set_property PACKAGE_PIN M19 [get_ports spi_mosi_0]
+set_property PACKAGE_PIN R18 [get_ports spi_dc_0]
+set_property PACKAGE_PIN M18 [get_ports spi_cs_n_0]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
-connect_debug_port dbg_hub/clk [get_nets clk_IBUF_BUFG]
+connect_debug_port dbg_hub/clk [get_nets clk_1]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {encoder_input_1[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {encoder_input_1[0]}]
+set_property PACKAGE_PIN C15 [get_ports {encoder_input_1[1]}]
+set_property PACKAGE_PIN C16 [get_ports {encoder_input_1[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports button_0]
+set_property PACKAGE_PIN A14 [get_ports button_0]
+set_property PULLUP true [get_ports {encoder_input_1[1]}]
+set_property PULLUP true [get_ports {encoder_input_1[0]}]
+set_property PULLUP true [get_ports button_0]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {encoder_input[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {encoder_input[0]}]
+set_property PACKAGE_PIN A15 [get_ports {encoder_input[1]}]
+set_property PACKAGE_PIN A17 [get_ports {encoder_input[0]}]

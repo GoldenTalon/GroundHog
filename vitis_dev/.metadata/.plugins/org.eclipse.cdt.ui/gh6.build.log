@@ -1,0 +1,21 @@
+22:21:20 **** Incremental Build of configuration Release for project gh6 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -IC:/FPGA_Projects/GroundHog/vitis_dev/groundhog/export/groundhog/sw/groundhog/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gh6.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/FPGA_Projects/GroundHog/vitis_dev/groundhog/export/groundhog/sw/groundhog/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gh6.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gh6.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gh6.elf  |tee "gh6.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1904	    272	   3104	   5280	   14a0	gh6.elf
+'Finished building: gh6.elf.size'
+' '
+
+22:21:21 Build Finished (took 611ms)
+

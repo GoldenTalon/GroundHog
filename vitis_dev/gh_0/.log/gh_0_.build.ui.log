@@ -1,2 +1,17 @@
-2024-09-23T04:53:41.4011256000-Nothing to build in platform 'gh_0'
+2024-09-23T22:15:41.601339900255-22:15:41 **** Clean-only build of project gh_0 ****
+000-buildplatform.bat 57701 gh_0 clean 
+000-XSDB Server Channel: tcfchan#34
+000-Cleaning the BSP for domain  - standalone_microblaze_0
+000-make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_17/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/gpio_v4_9/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/standalone_v8_1/src -s clean 
+000-
+000-rm -f microblaze_0/lib/libxil.a
+000-
+00255-
+22:15:45 Build Finished (took 4s.105ms)
 

@@ -1,0 +1,21 @@
+22:17:28 **** Build of configuration Debug for project gh5 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/FPGA_Projects/GroundHog/vitis_dev/GroudHog/export/GroudHog/sw/GroudHog/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gh5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/FPGA_Projects/GroundHog/vitis_dev/GroudHog/export/GroudHog/sw/GroudHog/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "gh5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gh5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gh5.elf  |tee "gh5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1992	    272	   3104	   5368	   14f8	gh5.elf
+'Finished building: gh5.elf.size'
+' '
+
+22:17:29 Build Finished (took 743ms)
+

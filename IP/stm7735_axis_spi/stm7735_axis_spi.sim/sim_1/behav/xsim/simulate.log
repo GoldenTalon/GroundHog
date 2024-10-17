@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Test Case 1: Passed
+Test Case 2: Passed
+$finish called at time : 715 ns : File "C:/FPGA_Projects/GroundHog/IP/stm7735_axis_spi/stm7735_axis_spi.srcs/sim_1/imports/sim/tb.v" Line 100

@@ -1,0 +1,9 @@
+TFTpinout,spi_name,arduino_pin,
+GND,GND,GND
+VCC,3.3V,3.3V
+SCL,SCLK,13
+SDA,MOSI,11
+RES,RST,9
+DC,DC,8
+CS,CS,10
+BL,back_light_enable,3.3V

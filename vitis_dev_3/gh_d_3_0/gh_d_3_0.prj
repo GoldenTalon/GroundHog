@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="gh_d_3_0" location="C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3_0" platform="C:/FPGA_Projects/GroundHog/vitis_dev_3/gh_d_3/export/gh_d_3/gh_d_3.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="gh_d_3_0_system" sysConfig="gh_d_3" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="1c77d55b65940143fd915d762e18e5b0">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.357077754" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.741608334" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

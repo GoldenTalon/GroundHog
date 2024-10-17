@@ -1,0 +1,387 @@
+03:38:33 DEBUG : Logs will be stored at 'C:/FPGA_Projects/GroundHog/vitis_dev_2/IDE.log'.
+03:38:38 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\FPGA_Projects\GroundHog\vitis_dev_2\temp_xsdb_launch_script.tcl
+03:38:38 INFO  : Registering command handlers for Vitis TCF services
+03:38:39 INFO  : Platform repository initialization has completed.
+03:38:41 INFO  : XSCT server has started successfully.
+03:38:41 INFO  : plnx-install-location is set to ''
+03:38:41 INFO  : Successfully done setting XSCT server connection channel  
+03:38:41 INFO  : Successfully done query RDI_DATADIR 
+03:38:41 INFO  : Successfully done setting workspace for the tool. 
+03:39:34 INFO  : Result from executing command 'getProjects': gh_d_1
+03:39:34 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+03:39:35 WARN  : An unexpected exception occurred in the module 'platform project logging'
+03:39:36 INFO  : Platform 'gh_d_1' is added to custom repositories.
+03:39:39 INFO  : Platform 'gh_d_1' is added to custom repositories.
+03:40:24 INFO  : Result from executing command 'getProjects': gh_d_1
+03:40:24 INFO  : Result from executing command 'getPlatforms': gh_d_1|C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_d_1/export/gh_d_1/gh_d_1.xpfm;xilinx_vck190_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+03:40:25 INFO  : Checking for BSP changes to sync application flags for project 'gh_7'...
+03:40:55 INFO  : Checking for BSP changes to sync application flags for project 'gh_7'...
+03:41:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:41:42 INFO  : 'fpga -state' command is executed.
+03:41:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:41:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:41:42 INFO  : 'fpga -state' command is executed.
+03:41:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:41:42 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:41:42 INFO  : 'jtag frequency' command is executed.
+03:41:45 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:41:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+03:41:45 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:41:45 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:41:45 INFO  : 'jtag frequency' command is executed.
+03:41:48 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:41:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+03:41:48 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:43:11 INFO  : Build configuration of 'gh_7' is updated to 'Release'
+03:43:11 INFO  : Checking for BSP changes to sync application flags for project 'gh_7'...
+03:43:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:43:15 INFO  : 'fpga -state' command is executed.
+03:43:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:43:16 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:43:16 INFO  : 'jtag frequency' command is executed.
+03:43:19 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:43:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+03:43:19 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:43:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:43:30 INFO  : 'fpga -state' command is executed.
+03:43:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:43:30 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:43:30 INFO  : 'jtag frequency' command is executed.
+03:43:33 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:43:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+03:43:33 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:43:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:43:34 INFO  : 'fpga -state' command is executed.
+03:43:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:43:34 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:43:34 INFO  : 'jtag frequency' command is executed.
+03:43:37 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:43:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+03:43:37 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:44:51 INFO  : Hardware specification for platform project 'gh_d_1' is updated.
+03:45:03 INFO  : Result from executing command 'getProjects': gh_d_1
+03:45:03 INFO  : Result from executing command 'getPlatforms': gh_d_1|C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_d_1/export/gh_d_1/gh_d_1.xpfm;xilinx_vck190_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+03:45:05 INFO  : Checking for BSP changes to sync application flags for project 'gh_7'...
+03:45:09 INFO  : The hardware specification used by project 'gh_7' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+03:45:09 INFO  : The file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7\_ide\bitstream\gh_d_1.mmi' stored in project is removed.
+03:45:09 INFO  : The updated bitstream files are copied from platform to folder 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7\_ide\bitstream' in project 'gh_7'.
+03:45:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:45:09 INFO  : 'fpga -state' command is executed.
+03:45:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:45:09 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:45:09 INFO  : 'jtag frequency' command is executed.
+03:45:12 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:45:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+03:45:12 ERROR : no targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ". available targets:
+  1* xc7a35t
+     2  Legacy Debug Hub
+03:46:25 INFO  : Result from executing command 'getProjects': att_2
+03:46:25 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+03:46:34 INFO  : Result from executing command 'getProjects': att_2
+03:46:34 INFO  : Result from executing command 'getPlatforms': att_2|C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/att_2.xpfm;xilinx_vck190_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|E:/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+03:46:46 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_gh_7-Default'. 
+Make sure that the application 'gh_7' is built properly for configuration 'Release' before launching.
+03:46:51 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_gh_7-Default'. 
+Make sure that the application 'gh_7' is built properly for configuration 'Release' before launching.
+03:47:12 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_gh_7-Default'. 
+Make sure that the application 'gh_7' is built properly for configuration 'Release' before launching.
+03:47:20 INFO  : Build configuration of 'gh_7_system' is updated to 'Debug'
+03:47:20 INFO  : Build configuration of system project is automatically updated to 'Debug'.
+03:47:21 INFO  : Checking for BSP changes to sync application flags for project 'gh_7'...
+03:47:21 ERROR : Failed to get platform details for the project 'gh_7'. Cannot sync application flags.
+03:48:04 INFO  : Checking for BSP changes to sync application flags for project 'gh_7'...
+03:48:09 INFO  : Build configuration of 'gh_7' is updated to 'Release'
+03:48:09 INFO  : Checking for BSP changes to sync application flags for project 'gh_7'...
+03:48:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:48:12 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:48:12 INFO  : 'jtag frequency' command is executed.
+03:48:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:48:13 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:48:13 INFO  : Context for processor 'microblaze_0' is selected.
+03:48:13 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:48:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:48:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:48:13 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:48:54 INFO  : Disconnected from the channel tcfchan#2.
+03:48:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:48:55 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:48:55 INFO  : 'jtag frequency' command is executed.
+03:48:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:48:56 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:48:56 INFO  : Context for processor 'microblaze_0' is selected.
+03:48:56 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:48:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:48:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:48:56 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:49:28 INFO  : Disconnected from the channel tcfchan#5.
+03:49:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:49:29 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:49:29 INFO  : 'jtag frequency' command is executed.
+03:49:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:49:30 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:49:30 INFO  : Context for processor 'microblaze_0' is selected.
+03:49:30 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:49:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:49:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:49:30 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:50:33 INFO  : Disconnected from the channel tcfchan#6.
+03:50:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:50:34 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:50:34 INFO  : 'jtag frequency' command is executed.
+03:50:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:50:34 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:50:34 INFO  : Context for processor 'microblaze_0' is selected.
+03:50:34 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:50:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:50:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:50:34 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:50:40 INFO  : Disconnected from the channel tcfchan#7.
+03:50:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:50:41 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:50:41 INFO  : 'jtag frequency' command is executed.
+03:50:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:50:42 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:50:42 INFO  : Context for processor 'microblaze_0' is selected.
+03:50:42 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:50:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:50:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:50:42 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:50:47 INFO  : Disconnected from the channel tcfchan#8.
+03:50:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:50:48 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:50:48 INFO  : 'jtag frequency' command is executed.
+03:50:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:50:49 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:50:49 INFO  : Context for processor 'microblaze_0' is selected.
+03:50:49 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:50:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:50:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:50:49 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:50:53 INFO  : Disconnected from the channel tcfchan#9.
+03:50:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:50:54 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:50:54 INFO  : 'jtag frequency' command is executed.
+03:50:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:50:55 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:50:55 INFO  : Context for processor 'microblaze_0' is selected.
+03:50:55 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:50:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:50:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:50:55 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:51:02 INFO  : Disconnected from the channel tcfchan#10.
+03:51:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:51:04 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:51:04 INFO  : 'jtag frequency' command is executed.
+03:51:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:51:04 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:51:04 INFO  : Context for processor 'microblaze_0' is selected.
+03:51:04 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:51:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:51:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:51:04 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:51:16 INFO  : Disconnected from the channel tcfchan#11.
+03:51:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:51:17 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:51:17 INFO  : 'jtag frequency' command is executed.
+03:51:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:51:18 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:51:18 INFO  : Context for processor 'microblaze_0' is selected.
+03:51:18 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:51:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:51:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:51:18 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:51:55 INFO  : Disconnected from the channel tcfchan#12.
+03:51:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:51:56 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:51:56 INFO  : 'jtag frequency' command is executed.
+03:51:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:51:57 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:51:57 INFO  : Context for processor 'microblaze_0' is selected.
+03:51:57 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:51:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:51:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:51:57 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:52:06 INFO  : Disconnected from the channel tcfchan#13.
+03:52:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:52:07 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:52:07 INFO  : 'jtag frequency' command is executed.
+03:52:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:52:07 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:52:07 INFO  : Context for processor 'microblaze_0' is selected.
+03:52:07 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:52:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:52:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:52:07 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:52:44 INFO  : Disconnected from the channel tcfchan#14.
+03:52:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:52:45 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:52:45 INFO  : 'jtag frequency' command is executed.
+03:52:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:52:46 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:52:46 INFO  : Context for processor 'microblaze_0' is selected.
+03:52:46 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:52:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:52:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:52:46 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:53:12 INFO  : Disconnected from the channel tcfchan#15.
+03:53:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:53:13 INFO  : Jtag cable 'Digilent Basys3 210183B30CB6A' is selected.
+03:53:13 INFO  : 'jtag frequency' command is executed.
+03:53:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}' command is executed.
+03:53:13 INFO  : Device configured successfully with "C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit"
+03:53:13 INFO  : Context for processor 'microblaze_0' is selected.
+03:53:13 INFO  : Hardware design and registers information is loaded from 'C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa'.
+03:53:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:53:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183B30CB6A" && level==0 && jtag_device_ctx=="jsn-Basys3-210183B30CB6A-0362d093-0"}
+fpga -file C:/FPGA_Projects/GroundHog/vitis_dev_2/gh_7/_ide/bitstream/gh_d_2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/FPGA_Projects/GroundHog/vitis_dev_2/att_2/export/att_2/hw/gh_d_2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+03:53:13 INFO  : Launch script is exported to file 'C:\FPGA_Projects\GroundHog\vitis_dev_2\gh_7_system\_ide\scripts\debugger_gh_7-default.tcl'
+03:53:29 INFO  : Disconnected from the channel tcfchan#16.
