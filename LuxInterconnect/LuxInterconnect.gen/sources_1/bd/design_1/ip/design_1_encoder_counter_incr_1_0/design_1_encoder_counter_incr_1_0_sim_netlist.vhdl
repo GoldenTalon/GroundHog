@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Oct 14 12:35:06 2024
+-- Date        : Fri Oct 25 15:49:50 2024
 -- Host        : DESKTOP-FM3EGBE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_encoder_counter_incr_1_0/design_1_encoder_counter_incr_1_0_sim_netlist.vhdl
@@ -19,10 +19,10 @@ entity design_1_encoder_counter_incr_1_0_encoder_counter_increment_change is
   port (
     counter_div_by_4 : out STD_LOGIC_VECTOR ( 29 downto 0 );
     increment_value_out : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    button : in STD_LOGIC;
     encoder_input : in STD_LOGIC_VECTOR ( 1 downto 0 );
     clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    button : in STD_LOGIC
+    rst : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of design_1_encoder_counter_incr_1_0_encoder_counter_increment_change : entity is "encoder_counter_increment_change";
@@ -93,37 +93,22 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   signal \_inferred__1/i___0_carry_n_5\ : STD_LOGIC;
   signal \_inferred__1/i___0_carry_n_6\ : STD_LOGIC;
   signal \_inferred__1/i___0_carry_n_7\ : STD_LOGIC;
-  signal button_debounce_counter : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal button_debounce_counter0 : STD_LOGIC_VECTOR ( 13 downto 1 );
-  signal \button_debounce_counter0_carry__0_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter0_carry__0_n_1\ : STD_LOGIC;
-  signal \button_debounce_counter0_carry__0_n_2\ : STD_LOGIC;
-  signal \button_debounce_counter0_carry__0_n_3\ : STD_LOGIC;
-  signal \button_debounce_counter0_carry__1_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter0_carry__1_n_1\ : STD_LOGIC;
-  signal \button_debounce_counter0_carry__1_n_2\ : STD_LOGIC;
-  signal \button_debounce_counter0_carry__1_n_3\ : STD_LOGIC;
-  signal button_debounce_counter0_carry_n_0 : STD_LOGIC;
-  signal button_debounce_counter0_carry_n_1 : STD_LOGIC;
-  signal button_debounce_counter0_carry_n_2 : STD_LOGIC;
-  signal button_debounce_counter0_carry_n_3 : STD_LOGIC;
+  signal button_debounce_counter : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \button_debounce_counter[0]_i_1_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter[10]_i_1_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter[11]_i_1_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter[12]_i_1_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter[13]_i_1_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter[13]_i_3_n_0\ : STD_LOGIC;
-  signal \button_debounce_counter[13]_i_4_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[1]_i_1_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[2]_i_1_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[3]_i_1_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[4]_i_1_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[5]_i_1_n_0\ : STD_LOGIC;
+  signal \button_debounce_counter[5]_i_2_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[6]_i_1_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[7]_i_1_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[8]_i_1_n_0\ : STD_LOGIC;
   signal \button_debounce_counter[9]_i_1_n_0\ : STD_LOGIC;
+  signal \button_debounce_counter[9]_i_2_n_0\ : STD_LOGIC;
+  signal \button_debounce_counter[9]_i_3_n_0\ : STD_LOGIC;
   signal \button_press_count[0]_i_1_n_0\ : STD_LOGIC;
+  signal \button_press_count[1]_i_2_n_0\ : STD_LOGIC;
   signal \button_press_count__0\ : STD_LOGIC;
   signal button_press_count_n_0 : STD_LOGIC;
   signal \button_press_count_reg_n_0_[0]\ : STD_LOGIC;
@@ -181,8 +166,8 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   signal counter_0 : STD_LOGIC;
   signal \counter_div_by_4[29]_i_1_n_0\ : STD_LOGIC;
   signal data0 : STD_LOGIC;
-  signal debounce_counter : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal debounce_counter0 : STD_LOGIC_VECTOR ( 15 downto 1 );
+  signal debounce_counter : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal debounce_counter0 : STD_LOGIC_VECTOR ( 13 downto 1 );
   signal \debounce_counter0_carry__0_n_0\ : STD_LOGIC;
   signal \debounce_counter0_carry__0_n_1\ : STD_LOGIC;
   signal \debounce_counter0_carry__0_n_2\ : STD_LOGIC;
@@ -191,8 +176,6 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   signal \debounce_counter0_carry__1_n_1\ : STD_LOGIC;
   signal \debounce_counter0_carry__1_n_2\ : STD_LOGIC;
   signal \debounce_counter0_carry__1_n_3\ : STD_LOGIC;
-  signal \debounce_counter0_carry__2_n_2\ : STD_LOGIC;
-  signal \debounce_counter0_carry__2_n_3\ : STD_LOGIC;
   signal debounce_counter0_carry_n_0 : STD_LOGIC;
   signal debounce_counter0_carry_n_1 : STD_LOGIC;
   signal debounce_counter0_carry_n_2 : STD_LOGIC;
@@ -202,8 +185,6 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   signal \debounce_counter[11]_i_1_n_0\ : STD_LOGIC;
   signal \debounce_counter[12]_i_1_n_0\ : STD_LOGIC;
   signal \debounce_counter[13]_i_1_n_0\ : STD_LOGIC;
-  signal \debounce_counter[14]_i_1_n_0\ : STD_LOGIC;
-  signal \debounce_counter[15]_i_1_n_0\ : STD_LOGIC;
   signal \debounce_counter[1]_i_1_n_0\ : STD_LOGIC;
   signal \debounce_counter[2]_i_1_n_0\ : STD_LOGIC;
   signal \debounce_counter[3]_i_1_n_0\ : STD_LOGIC;
@@ -304,16 +285,14 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   signal \increment_value_reg_n_0_[0]\ : STD_LOGIC;
   signal \increment_value_reg_n_0_[13]\ : STD_LOGIC;
   signal \increment_value_reg_n_0_[6]\ : STD_LOGIC;
-  signal p_0_in : STD_LOGIC;
   signal prev_state : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal stable_input : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \stable_input[0]_i_1_n_0\ : STD_LOGIC;
   signal \stable_input[1]_i_1_n_0\ : STD_LOGIC;
   signal \stable_input[1]_i_2_n_0\ : STD_LOGIC;
   signal \stable_input[1]_i_3_n_0\ : STD_LOGIC;
+  signal \stable_input[1]_i_4_n_0\ : STD_LOGIC;
   signal \NLW__inferred__1/i___0_carry__6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_button_debounce_counter0_carry__2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_button_debounce_counter0_carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   signal NLW_counter0_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_counter0_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_counter0_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -323,8 +302,8 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   signal \NLW_counter0_inferred__0/i__carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_counter0_inferred__0/i__carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_counter0_inferred__0/i__carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_debounce_counter0_carry__2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
-  signal \NLW_debounce_counter0_carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_debounce_counter0_carry__2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_debounce_counter0_carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of \_inferred__1/i___0_carry\ : label is 35;
   attribute ADDER_THRESHOLD of \_inferred__1/i___0_carry__0\ : label is 35;
@@ -334,27 +313,17 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   attribute ADDER_THRESHOLD of \_inferred__1/i___0_carry__4\ : label is 35;
   attribute ADDER_THRESHOLD of \_inferred__1/i___0_carry__5\ : label is 35;
   attribute ADDER_THRESHOLD of \_inferred__1/i___0_carry__6\ : label is 35;
-  attribute ADDER_THRESHOLD of button_debounce_counter0_carry : label is 35;
-  attribute ADDER_THRESHOLD of \button_debounce_counter0_carry__0\ : label is 35;
-  attribute ADDER_THRESHOLD of \button_debounce_counter0_carry__1\ : label is 35;
-  attribute ADDER_THRESHOLD of \button_debounce_counter0_carry__2\ : label is 35;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \button_debounce_counter[0]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \button_debounce_counter[10]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \button_debounce_counter[11]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \button_debounce_counter[12]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \button_debounce_counter[13]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \button_debounce_counter[1]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \button_debounce_counter[2]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \button_debounce_counter[3]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \button_debounce_counter[4]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \button_debounce_counter[0]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \button_debounce_counter[1]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \button_debounce_counter[2]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \button_debounce_counter[3]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \button_debounce_counter[5]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \button_debounce_counter[6]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \button_debounce_counter[7]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \button_debounce_counter[8]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \button_debounce_counter[9]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of button_press_count : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \button_press_count[0]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \button_debounce_counter[6]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \button_debounce_counter[7]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \button_debounce_counter[8]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of button_press_count : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \button_press_count[0]_i_1\ : label is "soft_lutpair6";
   attribute COMPARATOR_THRESHOLD : integer;
   attribute COMPARATOR_THRESHOLD of counter0_carry : label is 11;
   attribute COMPARATOR_THRESHOLD of \counter0_carry__0\ : label is 11;
@@ -368,10 +337,10 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0_encoder_counter_incr
   attribute ADDER_THRESHOLD of \debounce_counter0_carry__0\ : label is 35;
   attribute ADDER_THRESHOLD of \debounce_counter0_carry__1\ : label is 35;
   attribute ADDER_THRESHOLD of \debounce_counter0_carry__2\ : label is 35;
-  attribute SOFT_HLUTNM of \increment_value[13]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \increment_value[6]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \stable_input[0]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \stable_input[1]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \increment_value[13]_i_1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \increment_value[6]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \stable_input[0]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \stable_input[1]_i_1\ : label is "soft_lutpair2";
 begin
 \_inferred__1/i___0_carry\: unisim.vcomponents.CARRY4
      port map (
@@ -541,239 +510,154 @@ begin
       S(1) => \i___0_carry__6_i_6_n_0\,
       S(0) => \i___0_carry__6_i_7_n_0\
     );
-button_debounce_counter0_carry: unisim.vcomponents.CARRY4
-     port map (
-      CI => '0',
-      CO(3) => button_debounce_counter0_carry_n_0,
-      CO(2) => button_debounce_counter0_carry_n_1,
-      CO(1) => button_debounce_counter0_carry_n_2,
-      CO(0) => button_debounce_counter0_carry_n_3,
-      CYINIT => button_debounce_counter(0),
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => button_debounce_counter0(4 downto 1),
-      S(3 downto 0) => button_debounce_counter(4 downto 1)
-    );
-\button_debounce_counter0_carry__0\: unisim.vcomponents.CARRY4
-     port map (
-      CI => button_debounce_counter0_carry_n_0,
-      CO(3) => \button_debounce_counter0_carry__0_n_0\,
-      CO(2) => \button_debounce_counter0_carry__0_n_1\,
-      CO(1) => \button_debounce_counter0_carry__0_n_2\,
-      CO(0) => \button_debounce_counter0_carry__0_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => button_debounce_counter0(8 downto 5),
-      S(3 downto 0) => button_debounce_counter(8 downto 5)
-    );
-\button_debounce_counter0_carry__1\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \button_debounce_counter0_carry__0_n_0\,
-      CO(3) => \button_debounce_counter0_carry__1_n_0\,
-      CO(2) => \button_debounce_counter0_carry__1_n_1\,
-      CO(1) => \button_debounce_counter0_carry__1_n_2\,
-      CO(0) => \button_debounce_counter0_carry__1_n_3\,
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 0) => button_debounce_counter0(12 downto 9),
-      S(3 downto 0) => button_debounce_counter(12 downto 9)
-    );
-\button_debounce_counter0_carry__2\: unisim.vcomponents.CARRY4
-     port map (
-      CI => \button_debounce_counter0_carry__1_n_0\,
-      CO(3 downto 0) => \NLW_button_debounce_counter0_carry__2_CO_UNCONNECTED\(3 downto 0),
-      CYINIT => '0',
-      DI(3 downto 0) => B"0000",
-      O(3 downto 1) => \NLW_button_debounce_counter0_carry__2_O_UNCONNECTED\(3 downto 1),
-      O(0) => button_debounce_counter0(13),
-      S(3 downto 1) => B"000",
-      S(0) => button_debounce_counter(13)
-    );
-\button_debounce_counter[0]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"0440"
+      INIT => X"2"
     )
         port map (
-      I0 => button_debounce_counter(0),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => \button_debounce_counter[9]_i_3_n_0\,
+      I1 => button_debounce_counter(0),
       O => \button_debounce_counter[0]_i_1_n_0\
     );
-\button_debounce_counter[10]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[1]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0880"
+      INIT => X"28"
     )
         port map (
-      I0 => button_debounce_counter0(10),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
-      O => \button_debounce_counter[10]_i_1_n_0\
-    );
-\button_debounce_counter[11]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0880"
-    )
-        port map (
-      I0 => button_debounce_counter0(11),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
-      O => \button_debounce_counter[11]_i_1_n_0\
-    );
-\button_debounce_counter[12]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0880"
-    )
-        port map (
-      I0 => button_debounce_counter0(12),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
-      O => \button_debounce_counter[12]_i_1_n_0\
-    );
-\button_debounce_counter[13]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0880"
-    )
-        port map (
-      I0 => button_debounce_counter0(13),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
-      O => \button_debounce_counter[13]_i_1_n_0\
-    );
-\button_debounce_counter[13]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"1011FFFF"
-    )
-        port map (
-      I0 => button_debounce_counter(11),
-      I1 => button_debounce_counter(12),
-      I2 => \button_debounce_counter[13]_i_3_n_0\,
-      I3 => \button_debounce_counter[13]_i_4_n_0\,
-      I4 => button_debounce_counter(13),
-      O => p_0_in
-    );
-\button_debounce_counter[13]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0001"
-    )
-        port map (
-      I0 => button_debounce_counter(6),
-      I1 => button_debounce_counter(7),
-      I2 => button_debounce_counter(5),
-      I3 => button_debounce_counter(4),
-      O => \button_debounce_counter[13]_i_3_n_0\
-    );
-\button_debounce_counter[13]_i_4\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-        port map (
-      I0 => button_debounce_counter(8),
-      I1 => button_debounce_counter(10),
-      I2 => button_debounce_counter(9),
-      O => \button_debounce_counter[13]_i_4_n_0\
-    );
-\button_debounce_counter[1]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0880"
-    )
-        port map (
-      I0 => button_debounce_counter0(1),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => \button_debounce_counter[9]_i_3_n_0\,
+      I1 => button_debounce_counter(0),
+      I2 => button_debounce_counter(1),
       O => \button_debounce_counter[1]_i_1_n_0\
     );
 \button_debounce_counter[2]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0880"
+      INIT => X"2A80"
     )
         port map (
-      I0 => button_debounce_counter0(2),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => \button_debounce_counter[9]_i_3_n_0\,
+      I1 => button_debounce_counter(0),
+      I2 => button_debounce_counter(1),
+      I3 => button_debounce_counter(2),
       O => \button_debounce_counter[2]_i_1_n_0\
     );
-\button_debounce_counter[3]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0880"
+      INIT => X"7F008000"
     )
         port map (
-      I0 => button_debounce_counter0(3),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => button_debounce_counter(2),
+      I1 => button_debounce_counter(0),
+      I2 => button_debounce_counter(1),
+      I3 => \button_debounce_counter[9]_i_3_n_0\,
+      I4 => button_debounce_counter(3),
       O => \button_debounce_counter[3]_i_1_n_0\
     );
-\button_debounce_counter[4]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[4]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0880"
+      INIT => X"7FFF000080000000"
     )
         port map (
-      I0 => button_debounce_counter0(4),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => button_debounce_counter(1),
+      I1 => button_debounce_counter(0),
+      I2 => button_debounce_counter(2),
+      I3 => button_debounce_counter(3),
+      I4 => \button_debounce_counter[9]_i_3_n_0\,
+      I5 => button_debounce_counter(4),
       O => \button_debounce_counter[4]_i_1_n_0\
     );
-\button_debounce_counter[5]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[5]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0880"
+      INIT => X"48"
     )
         port map (
-      I0 => button_debounce_counter0(5),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => \button_debounce_counter[5]_i_2_n_0\,
+      I1 => \button_debounce_counter[9]_i_3_n_0\,
+      I2 => button_debounce_counter(5),
       O => \button_debounce_counter[5]_i_1_n_0\
     );
-\button_debounce_counter[6]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[5]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0880"
+      INIT => X"80000000"
     )
         port map (
-      I0 => button_debounce_counter0(6),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => button_debounce_counter(4),
+      I1 => button_debounce_counter(3),
+      I2 => button_debounce_counter(2),
+      I3 => button_debounce_counter(0),
+      I4 => button_debounce_counter(1),
+      O => \button_debounce_counter[5]_i_2_n_0\
+    );
+\button_debounce_counter[6]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"84"
+    )
+        port map (
+      I0 => \button_debounce_counter[9]_i_2_n_0\,
+      I1 => \button_debounce_counter[9]_i_3_n_0\,
+      I2 => button_debounce_counter(6),
       O => \button_debounce_counter[6]_i_1_n_0\
     );
 \button_debounce_counter[7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0880"
+      INIT => X"D020"
     )
         port map (
-      I0 => button_debounce_counter0(7),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => button_debounce_counter(6),
+      I1 => \button_debounce_counter[9]_i_2_n_0\,
+      I2 => \button_debounce_counter[9]_i_3_n_0\,
+      I3 => button_debounce_counter(7),
       O => \button_debounce_counter[7]_i_1_n_0\
     );
-\button_debounce_counter[8]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[8]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0880"
+      INIT => X"DF002000"
     )
         port map (
-      I0 => button_debounce_counter0(8),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => button_debounce_counter(7),
+      I1 => \button_debounce_counter[9]_i_2_n_0\,
+      I2 => button_debounce_counter(6),
+      I3 => \button_debounce_counter[9]_i_3_n_0\,
+      I4 => button_debounce_counter(8),
       O => \button_debounce_counter[8]_i_1_n_0\
     );
-\button_debounce_counter[9]_i_1\: unisim.vcomponents.LUT4
+\button_debounce_counter[9]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0880"
+      INIT => X"DFFF000020000000"
     )
         port map (
-      I0 => button_debounce_counter0(9),
-      I1 => p_0_in,
-      I2 => button,
-      I3 => button_prev_reg_n_0,
+      I0 => button_debounce_counter(6),
+      I1 => \button_debounce_counter[9]_i_2_n_0\,
+      I2 => button_debounce_counter(7),
+      I3 => button_debounce_counter(8),
+      I4 => \button_debounce_counter[9]_i_3_n_0\,
+      I5 => button_debounce_counter(9),
       O => \button_debounce_counter[9]_i_1_n_0\
+    );
+\button_debounce_counter[9]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"7FFFFFFFFFFFFFFF"
+    )
+        port map (
+      I0 => button_debounce_counter(1),
+      I1 => button_debounce_counter(0),
+      I2 => button_debounce_counter(2),
+      I3 => button_debounce_counter(3),
+      I4 => button_debounce_counter(4),
+      I5 => button_debounce_counter(5),
+      O => \button_debounce_counter[9]_i_2_n_0\
+    );
+\button_debounce_counter[9]_i_3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000FF1FFF1F0000"
+    )
+        port map (
+      I0 => button_debounce_counter(3),
+      I1 => button_debounce_counter(4),
+      I2 => button_debounce_counter(5),
+      I3 => \button_press_count[1]_i_2_n_0\,
+      I4 => button,
+      I5 => button_prev_reg_n_0,
+      O => \button_debounce_counter[9]_i_3_n_0\
     );
 \button_debounce_counter_reg[0]\: unisim.vcomponents.FDCE
      port map (
@@ -782,38 +666,6 @@ button_debounce_counter0_carry: unisim.vcomponents.CARRY4
       CLR => rst,
       D => \button_debounce_counter[0]_i_1_n_0\,
       Q => button_debounce_counter(0)
-    );
-\button_debounce_counter_reg[10]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => rst,
-      D => \button_debounce_counter[10]_i_1_n_0\,
-      Q => button_debounce_counter(10)
-    );
-\button_debounce_counter_reg[11]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => rst,
-      D => \button_debounce_counter[11]_i_1_n_0\,
-      Q => button_debounce_counter(11)
-    );
-\button_debounce_counter_reg[12]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => rst,
-      D => \button_debounce_counter[12]_i_1_n_0\,
-      Q => button_debounce_counter(12)
-    );
-\button_debounce_counter_reg[13]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => rst,
-      D => \button_debounce_counter[13]_i_1_n_0\,
-      Q => button_debounce_counter(13)
     );
 \button_debounce_counter_reg[1]\: unisim.vcomponents.FDCE
      port map (
@@ -904,15 +756,29 @@ button_press_count: unisim.vcomponents.LUT2
       I0 => \button_press_count_reg_n_0_[0]\,
       O => \button_press_count[0]_i_1_n_0\
     );
-\button_press_count[1]_i_1\: unisim.vcomponents.LUT3
+\button_press_count[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"04"
+      INIT => X"0000444000000000"
     )
         port map (
-      I0 => p_0_in,
-      I1 => button,
-      I2 => button_prev_reg_n_0,
+      I0 => \button_press_count[1]_i_2_n_0\,
+      I1 => button_debounce_counter(5),
+      I2 => button_debounce_counter(4),
+      I3 => button_debounce_counter(3),
+      I4 => button_prev_reg_n_0,
+      I5 => button,
       O => \button_press_count__0\
+    );
+\button_press_count[1]_i_2\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7FFF"
+    )
+        port map (
+      I0 => button_debounce_counter(9),
+      I1 => button_debounce_counter(8),
+      I2 => button_debounce_counter(7),
+      I3 => button_debounce_counter(6),
+      O => \button_press_count[1]_i_2_n_0\
     );
 \button_press_count_reg[0]\: unisim.vcomponents.FDCE
      port map (
@@ -930,14 +796,17 @@ button_press_count: unisim.vcomponents.LUT2
       D => button_press_count_n_0,
       Q => \button_press_count_reg_n_0_[1]\
     );
-button_prev_i_1: unisim.vcomponents.LUT3
+button_prev_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"CA"
+      INIT => X"FFFFBBBF44400000"
     )
         port map (
-      I0 => button,
-      I1 => button_prev_reg_n_0,
-      I2 => p_0_in,
+      I0 => \button_press_count[1]_i_2_n_0\,
+      I1 => button_debounce_counter(5),
+      I2 => button_debounce_counter(4),
+      I3 => button_debounce_counter(3),
+      I4 => button,
+      I5 => button_prev_reg_n_0,
       O => button_prev_i_1_n_0
     );
 button_prev_reg: unisim.vcomponents.FDPE
@@ -1799,15 +1668,13 @@ debounce_counter0_carry: unisim.vcomponents.CARRY4
 \debounce_counter0_carry__2\: unisim.vcomponents.CARRY4
      port map (
       CI => \debounce_counter0_carry__1_n_0\,
-      CO(3 downto 2) => \NLW_debounce_counter0_carry__2_CO_UNCONNECTED\(3 downto 2),
-      CO(1) => \debounce_counter0_carry__2_n_2\,
-      CO(0) => \debounce_counter0_carry__2_n_3\,
+      CO(3 downto 0) => \NLW_debounce_counter0_carry__2_CO_UNCONNECTED\(3 downto 0),
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \NLW_debounce_counter0_carry__2_O_UNCONNECTED\(3),
-      O(2 downto 0) => debounce_counter0(15 downto 13),
-      S(3) => '0',
-      S(2 downto 0) => debounce_counter(15 downto 13)
+      O(3 downto 1) => \NLW_debounce_counter0_carry__2_O_UNCONNECTED\(3 downto 1),
+      O(0) => debounce_counter0(13),
+      S(3 downto 1) => B"000",
+      S(0) => debounce_counter(13)
     );
 \debounce_counter[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -1873,32 +1740,6 @@ debounce_counter0_carry: unisim.vcomponents.CARRY4
       I4 => stable_input(0),
       I5 => encoder_input(0),
       O => \debounce_counter[13]_i_1_n_0\
-    );
-\debounce_counter[14]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0880888888880880"
-    )
-        port map (
-      I0 => debounce_counter0(14),
-      I1 => \stable_input[1]_i_2_n_0\,
-      I2 => stable_input(1),
-      I3 => encoder_input(1),
-      I4 => stable_input(0),
-      I5 => encoder_input(0),
-      O => \debounce_counter[14]_i_1_n_0\
-    );
-\debounce_counter[15]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0880888888880880"
-    )
-        port map (
-      I0 => debounce_counter0(15),
-      I1 => \stable_input[1]_i_2_n_0\,
-      I2 => stable_input(1),
-      I3 => encoder_input(1),
-      I4 => stable_input(0),
-      I5 => encoder_input(0),
-      O => \debounce_counter[15]_i_1_n_0\
     );
 \debounce_counter[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -2056,22 +1897,6 @@ debounce_counter0_carry: unisim.vcomponents.CARRY4
       CLR => rst,
       D => \debounce_counter[13]_i_1_n_0\,
       Q => debounce_counter(13)
-    );
-\debounce_counter_reg[14]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => rst,
-      D => \debounce_counter[14]_i_1_n_0\,
-      Q => debounce_counter(14)
-    );
-\debounce_counter_reg[15]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => '1',
-      CLR => rst,
-      D => \debounce_counter[15]_i_1_n_0\,
-      Q => debounce_counter(15)
     );
 \debounce_counter_reg[1]\: unisim.vcomponents.FDCE
      port map (
@@ -3237,29 +3062,38 @@ debounce_counter0_carry: unisim.vcomponents.CARRY4
       I2 => \stable_input[1]_i_2_n_0\,
       O => \stable_input[1]_i_1_n_0\
     );
-\stable_input[1]_i_2\: unisim.vcomponents.LUT4
+\stable_input[1]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"10FF"
-    )
-        port map (
-      I0 => debounce_counter(13),
-      I1 => debounce_counter(14),
-      I2 => \stable_input[1]_i_3_n_0\,
-      I3 => debounce_counter(15),
-      O => \stable_input[1]_i_2_n_0\
-    );
-\stable_input[1]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"01555555FFFFFFFF"
+      INIT => X"1011FFFF"
     )
         port map (
       I0 => debounce_counter(11),
+      I1 => debounce_counter(12),
+      I2 => \stable_input[1]_i_3_n_0\,
+      I3 => \stable_input[1]_i_4_n_0\,
+      I4 => debounce_counter(13),
+      O => \stable_input[1]_i_2_n_0\
+    );
+\stable_input[1]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0001"
+    )
+        port map (
+      I0 => debounce_counter(6),
       I1 => debounce_counter(7),
-      I2 => debounce_counter(8),
-      I3 => debounce_counter(10),
-      I4 => debounce_counter(9),
-      I5 => debounce_counter(12),
+      I2 => debounce_counter(5),
+      I3 => debounce_counter(4),
       O => \stable_input[1]_i_3_n_0\
+    );
+\stable_input[1]_i_4\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"80"
+    )
+        port map (
+      I0 => debounce_counter(8),
+      I1 => debounce_counter(10),
+      I2 => debounce_counter(9),
+      O => \stable_input[1]_i_4_n_0\
     );
 \stable_input_reg[0]\: unisim.vcomponents.FDCE
      port map (
@@ -3311,7 +3145,7 @@ architecture STRUCTURE of design_1_encoder_counter_incr_1_0 is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of rst : signal is "xilinx.com:signal:reset:1.0 rst RST";
   attribute X_INTERFACE_PARAMETER of rst : signal is "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 begin

@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Thu Sep 19 21:07:29 2024
+// Date        : Fri Oct 25 10:54:38 2024
 // Host        : DESKTOP-FM3EGBE running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_encoder_counter_0_0/design_1_encoder_counter_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_encoder_counter_0_0 -prefix
+//               design_1_encoder_counter_0_0_ design_1_encoder_counter_0_0_sim_netlist.v
 // Design      : design_1_encoder_counter_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,7 +21,7 @@ module design_1_encoder_counter_0_0
     rst,
     encoder_input,
     counter_div_by_4);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 450000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst;
   input [1:0]encoder_input;
   output [31:0]counter_div_by_4;
@@ -60,7 +60,6 @@ module design_1_encoder_counter_0_0
         .rst(rst));
 endmodule
 
-(* ORIG_REF_NAME = "encoder_counter" *) 
 module design_1_encoder_counter_0_0_encoder_counter
    (counter_div_by_4,
     encoder_input,

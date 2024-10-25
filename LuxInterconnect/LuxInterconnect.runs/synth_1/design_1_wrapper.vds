@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Oct 14 12:35:10 2024
-# Process ID: 21412
+# Start of session at: Fri Oct 25 15:49:53 2024
+# Process ID: 24528
 # Current directory: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.vds
@@ -12,13 +12,13 @@
 # Running On: DESKTOP-FM3EGBE, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34278 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1497.492 ; gain = 197.453
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1497.348 ; gain = 198.121
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA_Projects/GroundHog/IP'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA_Projects/ip_repo_lux'.
 WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/FPGA_Projects/GroundHog/IP/ip_repo'. The path is contained within another repository.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2023.1/data/ip'.
-add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1559.621 ; gain = 27.383
+add_files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.379 ; gain = 4.973
 Command: read_checkpoint -auto_incremental -incremental C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -31,35 +31,50 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12928
+INFO: [Synth 8-7075] Helper process launched with PID 7192
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2355.379 ; gain = 410.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2338.129 ; gain = 413.074
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_parameter_trans_0_1' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_axis_parameter_trans_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_parameter_trans_0_1' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_axis_parameter_trans_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_c_counter_binary_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_c_counter_binary_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_c_counter_binary_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_c_counter_binary_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_clk_wiz_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'spi_hdwr_ckl' of module 'design_1_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:82]
-WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' has 3 connections declared, but only 2 given [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:82]
+INFO: [Synth 8-6157] synthesizing module 'design_1_c_addsub_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_c_addsub_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_c_addsub_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_c_addsub_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_clk_wiz_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'spi_hdwr_ckl' of module 'design_1_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:78]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' has 3 connections declared, but only 2 given [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:78]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dds_compiler_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_dds_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dds_compiler_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_dds_compiler_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'design_1_dds_compiler_0_0' is unconnected for instance 'dds_compiler_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:81]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tvalid' of module 'design_1_dds_compiler_0_0' is unconnected for instance 'dds_compiler_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:81]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tdata' of module 'design_1_dds_compiler_0_0' is unconnected for instance 'dds_compiler_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:81]
+WARNING: [Synth 8-7023] instance 'dds_compiler_0' of module 'design_1_dds_compiler_0_0' has 7 connections declared, but only 4 given [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:81]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'design_1_encoder_counter_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_encoder_counter_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_encoder_counter_incr_1_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_incr_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_encoder_counter_incr_1_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_incr_1_0_stub.v:6]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:100]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_st7735_axi_spi_tmp_0_1' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_st7735_axi_spi_tmp_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_st7735_axi_spi_tmp_0_1' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_st7735_axi_spi_tmp_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_var_ultra_lux_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_var_ultra_lux_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_var_ultra_lux_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-21412-DESKTOP-FM3EGBE/realtime/design_1_var_ultra_lux_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_encoder_counter_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_encoder_counter_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_encoder_counter_incr_1_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_incr_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_encoder_counter_incr_1_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_encoder_counter_incr_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'increment_value_out' of module 'design_1_encoder_counter_incr_1_0' is unconnected for instance 'encoder_counter_incr_1' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:93]
+WARNING: [Synth 8-7023] instance 'encoder_counter_incr_1' of module 'design_1_encoder_counter_incr_1_0' has 7 connections declared, but only 6 given [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:93]
+INFO: [Synth 8-6157] synthesizing module 'design_1_phase_increment_calc_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_phase_increment_calc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_phase_increment_calc_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_phase_increment_calc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_prevent_negative_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_prevent_negative_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_prevent_negative_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_prevent_negative_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_scale_output_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_scale_output_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_scale_output_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_scale_output_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_supress_lux_out_0_1' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_supress_lux_out_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_supress_lux_out_0_1' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_supress_lux_out_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_1' [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_util_vector_logic_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_1' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/.Xil/Vivado-24528-DESKTOP-FM3EGBE/realtime/design_1_util_vector_logic_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
@@ -70,32 +85,20 @@ INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_3_0' [c:/FPGA_Proj
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_3_0' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/synth/design_1_xlconstant_3_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_1' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_5_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_5_0' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/synth/design_1_xlconstant_5_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_1' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_1' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_1' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'encoder_counter_incr_1'. This will prevent further optimization [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:92]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:100]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'var_ultra_lux_0'. This will prevent further optimization [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:114]
-WARNING: [Synth 8-7129] Port Din[24] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[23] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[21] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-3848] Net spi_clk_0 in module/entity design_1 does not have driver. [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:32]
+WARNING: [Synth 8-3848] Net spi_cs_n_0 in module/entity design_1 does not have driver. [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:33]
+WARNING: [Synth 8-3848] Net spi_dc_0 in module/entity design_1 does not have driver. [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:34]
+WARNING: [Synth 8-3848] Net spi_mosi_0 in module/entity design_1 does not have driver. [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/synth/design_1.v:35]
 WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
@@ -103,19 +106,113 @@ WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice is either u
 WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2449.379 ; gain = 504.316
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2430.895 ; gain = 505.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2467.273 ; gain = 522.211
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2448.801 ; gain = 523.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2467.273 ; gain = 522.211
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2448.801 ; gain = 523.746
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2467.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2448.801 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -124,23 +221,29 @@ Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen
 Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
 Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_encoder_counter_0_0/design_1_encoder_counter_0_0/design_1_encoder_counter_0_0_in_context.xdc] for cell 'design_1_i/encoder_counter_0'
 Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_encoder_counter_0_0/design_1_encoder_counter_0_0/design_1_encoder_counter_0_0_in_context.xdc] for cell 'design_1_i/encoder_counter_0'
-Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
-Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
-Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_axis_parameter_trans_0_1/design_1_axis_parameter_trans_0_1/design_1_axis_parameter_trans_0_1_in_context.xdc] for cell 'design_1_i/axis_parameter_trans_0'
-Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_axis_parameter_trans_0_1/design_1_axis_parameter_trans_0_1/design_1_axis_parameter_trans_0_1_in_context.xdc] for cell 'design_1_i/axis_parameter_trans_0'
-Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_st7735_axi_spi_tmp_0_1/design_1_st7735_axi_spi_tmp_0_1/design_1_st7735_axi_spi_tmp_0_1_in_context.xdc] for cell 'design_1_i/st7735_axi_spi_tmp_0'
-Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_st7735_axi_spi_tmp_0_1/design_1_st7735_axi_spi_tmp_0_1/design_1_st7735_axi_spi_tmp_0_1_in_context.xdc] for cell 'design_1_i/st7735_axi_spi_tmp_0'
-Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_1_0_in_context.xdc] for cell 'design_1_i/ila_0'
-Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_1_0_in_context.xdc] for cell 'design_1_i/ila_0'
-Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_var_ultra_lux_0_0/design_1_var_ultra_lux_0_0/design_1_var_ultra_lux_0_0_in_context.xdc] for cell 'design_1_i/var_ultra_lux_0'
-Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_var_ultra_lux_0_0/design_1_var_ultra_lux_0_0/design_1_var_ultra_lux_0_0_in_context.xdc] for cell 'design_1_i/var_ultra_lux_0'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0_in_context.xdc] for cell 'design_1_i/dds_compiler_0'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0_in_context.xdc] for cell 'design_1_i/dds_compiler_0'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_supress_lux_out_0_1/design_1_supress_lux_out_0_1/design_1_supress_lux_out_0_1_in_context.xdc] for cell 'design_1_i/supress_lux_out_0'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_supress_lux_out_0_1/design_1_supress_lux_out_0_1/design_1_supress_lux_out_0_1_in_context.xdc] for cell 'design_1_i/supress_lux_out_0'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_phase_increment_calc_0_0/design_1_phase_increment_calc_0_0/design_1_phase_increment_calc_0_0_in_context.xdc] for cell 'design_1_i/phase_increment_calc_0'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_phase_increment_calc_0_0/design_1_phase_increment_calc_0_0/design_1_phase_increment_calc_0_0_in_context.xdc] for cell 'design_1_i/phase_increment_calc_0'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_1'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_1'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_scale_output_0_0/design_1_scale_output_0_0/design_1_scale_output_0_0_in_context.xdc] for cell 'design_1_i/scale_output_0'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_scale_output_0_0/design_1_scale_output_0_0/design_1_scale_output_0_0_in_context.xdc] for cell 'design_1_i/scale_output_0'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_c_addsub_0_0/design_1_c_addsub_0_0/design_1_c_addsub_0_0_in_context.xdc] for cell 'design_1_i/c_addsub_0'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_c_addsub_0_0/design_1_c_addsub_0_0/design_1_c_addsub_0_0_in_context.xdc] for cell 'design_1_i/c_addsub_0'
 Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_encoder_counter_incr_1_0/design_1_encoder_counter_incr_1_0/design_1_encoder_counter_incr_1_0_in_context.xdc] for cell 'design_1_i/encoder_counter_incr_1'
 Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_encoder_counter_incr_1_0/design_1_encoder_counter_incr_1_0/design_1_encoder_counter_incr_1_0_in_context.xdc] for cell 'design_1_i/encoder_counter_incr_1'
+Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_prevent_negative_0_0/design_1_prevent_negative_0_0/design_1_prevent_negative_0_0_in_context.xdc] for cell 'design_1_i/prevent_negative_0'
+Finished Parsing XDC File [c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_prevent_negative_0_0/design_1_prevent_negative_0_0/design_1_prevent_negative_0_0_in_context.xdc] for cell 'design_1_i/prevent_negative_0'
 Parsing XDC File [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'encoder_input[1]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:212]
-WARNING: [Vivado 12-584] No ports matched 'encoder_input[0]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:213]
-WARNING: [Vivado 12-584] No ports matched 'encoder_input[1]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:214]
-WARNING: [Vivado 12-584] No ports matched 'encoder_input[0]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:215]
+WARNING: [Vivado 12-584] No ports matched 'encoder_input[1]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:213]
+WARNING: [Vivado 12-584] No ports matched 'encoder_input[0]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:214]
+WARNING: [Vivado 12-584] No ports matched 'encoder_input[1]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:215]
+WARNING: [Vivado 12-584] No ports matched 'encoder_input[0]'. [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc:216]
 Finished Parsing XDC File [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.srcs/constrs_1/imports/sources/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -149,22 +252,22 @@ Parsing XDC File [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.run
 Finished Parsing XDC File [C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2476.664 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2495.168 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2476.664 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -173,23 +276,29 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/FPGA_Pr
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/encoder_counter_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_1. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/c_counter_binary_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_2. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_3. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_parameter_trans_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/st7735_axi_spi_tmp_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/default_freq. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ila_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/var_ultra_lux_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/encoder_counter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dds_compiler_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/supress_lux_out_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/phase_increment_calc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_vector_logic_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/scale_output_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/c_addsub_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/encoder_counter_incr_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/prevent_negative_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -211,50 +320,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port Din[24] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[23] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[22] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[21] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[20] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[19] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[18] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[17] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[16] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[15] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[14] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[13] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[12] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[10] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[9] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[8] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[7] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[6] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[5] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[4] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[3] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[2] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[1] in module design_1_xlslice_0_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_0_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -272,37 +357,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -312,52 +397,58 @@ Report BlackBoxes:
 +------+----------------------------------+----------+
 |      |BlackBox name                     |Instances |
 +------+----------------------------------+----------+
-|1     |design_1_axis_parameter_trans_0_1 |         1|
-|2     |design_1_c_counter_binary_0_0     |         1|
-|3     |design_1_clk_wiz_0_0              |         1|
+|1     |design_1_c_addsub_0_0             |         1|
+|2     |design_1_clk_wiz_0_0              |         1|
+|3     |design_1_dds_compiler_0_0         |         1|
 |4     |design_1_encoder_counter_0_0      |         1|
 |5     |design_1_encoder_counter_incr_1_0 |         1|
-|6     |design_1_ila_0_0                  |         1|
-|7     |design_1_st7735_axi_spi_tmp_0_1   |         1|
-|8     |design_1_var_ultra_lux_0_0        |         1|
+|6     |design_1_phase_increment_calc_0_0 |         1|
+|7     |design_1_prevent_negative_0_0     |         1|
+|8     |design_1_scale_output_0_0         |         1|
+|9     |design_1_supress_lux_out_0_1      |         1|
+|10    |design_1_util_vector_logic_0_0    |         1|
+|11    |design_1_util_vector_logic_0_1    |         1|
 +------+----------------------------------+----------+
 
 Report Cell Usage: 
 +------+--------------------------------+------+
 |      |Cell                            |Count |
 +------+--------------------------------+------+
-|1     |design_1_axis_parameter_trans_0 |     1|
-|2     |design_1_c_counter_binary_0     |     1|
-|3     |design_1_clk_wiz_0              |     1|
+|1     |design_1_c_addsub_0             |     1|
+|2     |design_1_clk_wiz_0              |     1|
+|3     |design_1_dds_compiler_0         |     1|
 |4     |design_1_encoder_counter_0      |     1|
 |5     |design_1_encoder_counter_incr_1 |     1|
-|6     |design_1_ila_0                  |     1|
-|7     |design_1_st7735_axi_spi_tmp_0   |     1|
-|8     |design_1_var_ultra_lux_0        |     1|
-|9     |IBUF                            |     5|
-|10    |OBUF                            |     8|
+|6     |design_1_phase_increment_calc_0 |     1|
+|7     |design_1_prevent_negative_0     |     1|
+|8     |design_1_scale_output_0         |     1|
+|9     |design_1_supress_lux_out_0      |     1|
+|10    |design_1_util_vector_logic_0    |     2|
+|12    |IBUF                            |    21|
+|13    |OBUF                            |     4|
+|14    |OBUFT                           |     4|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 2495.168 ; gain = 522.211
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2495.168 ; gain = 550.105
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2476.664 ; gain = 523.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2476.664 ; gain = 551.609
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2495.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2476.664 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2476.664 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 8bd36557
+Synth Design complete | Checksum: 1c263da6
 INFO: [Common 17-83] Releasing license: Synthesis
-64 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+76 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 2495.168 ; gain = 921.254
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 2476.664 ; gain = 934.703
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'C:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 14 12:36:13 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 25 15:50:55 2024...

@@ -37,7 +37,7 @@ always @(posedge clk or posedge rst) begin
             button_debounce_counter <= 16'd0;
         end else begin
             // Debouncing: check for stable input for a certain period
-            if (button_debounce_counter < 16'd10000) begin
+            if (button_debounce_counter < 16'd1000) begin
                 // Increment debounce counter while waiting for stable state
                 button_debounce_counter <= button_debounce_counter + 1;
             end else begin
@@ -78,7 +78,7 @@ end
             if (encoder_input == stable_input) begin
                 debounce_counter <= 16'd0;  // Reset debounce counter if input is stable
             end else begin
-                if (debounce_counter < 16'd10000000) begin
+                if (debounce_counter < 16'd10000) begin
                     debounce_counter <= debounce_counter + 1;  // Increment debounce counter
                 end else begin
                     stable_input <= encoder_input;  // Accept new stable input after debounce

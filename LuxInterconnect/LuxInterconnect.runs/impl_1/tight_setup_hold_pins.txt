@@ -1,5 +1,14 @@
-+===========================================+===========================================+==========================================================+
-| Launch Setup Clock                        | Launch Hold Clock                         | Pin                                                      |
-+===========================================+===========================================+==========================================================+
-| lux_and_proc_clock_design_1_clk_wiz_0_0_1 | lux_and_proc_clock_design_1_clk_wiz_0_0_1 | design_1_i/encoder_counter_incr_1/inst/counter_reg[21]/D |
-+-------------------------------------------+-------------------------------------------+----------------------------------------------------------+
++=========================================+=========================================+=======================================================+
+| Launch Setup Clock                      | Launch Hold Clock                       | Pin                                                   |
++=========================================+=========================================+=======================================================+
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[28]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[29]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[31]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[30]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[27]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[25]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[24]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[26]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[21]_C/D |
+| lux_and_proc_clock_design_1_clk_wiz_0_0 | lux_and_proc_clock_design_1_clk_wiz_0_0 | design_1_i/supress_lux_out_0/inst/counter_reg[22]_C/D |
++-----------------------------------------+-----------------------------------------+-------------------------------------------------------+

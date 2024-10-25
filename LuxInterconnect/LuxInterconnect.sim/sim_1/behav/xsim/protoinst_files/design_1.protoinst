@@ -3,24 +3,6 @@
 	"modules": {
 		"design_1": {
 			"proto_instances": {
-				"/axis_parameter_trans_0/interface_axis": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "clk"},
-						"TDATA": { "actual": "tdata"},
-						"TREADY": { "actual": "tready"},
-						"TVALID": { "actual": "tvalid"}
-					}
-				},
-				"/st7735_axi_spi_tmp_0/s_axis": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "clk"},
-						"TDATA": { "actual": "s_axis_tdata"},
-						"TREADY": { "actual": "s_axis_tready"},
-						"TVALID": { "actual": "s_axis_tvalid"}
-					}
-				}
 			}
 		}
 	}

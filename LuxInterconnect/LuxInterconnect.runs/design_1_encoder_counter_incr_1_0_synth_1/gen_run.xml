@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="design_1_encoder_counter_incr_1_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728923643">
+<GenRun Id="design_1_encoder_counter_incr_1_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1729885724">
   <File Type="PA-TCL" Name="design_1_encoder_counter_incr_1_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_encoder_counter_incr_1_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_encoder_counter_incr_1_0_reports.tcl"/>

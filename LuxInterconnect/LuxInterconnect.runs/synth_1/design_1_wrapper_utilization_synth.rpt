@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Mon Oct 14 12:36:13 2024
+| Date         : Fri Oct 25 15:50:55 2024
 | Host         : DESKTOP-FM3EGBE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   13 |     0 |          0 |       106 | 12.26 |
+| Bonded IOB                  |   29 |     0 |          0 |       106 | 27.36 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -151,8 +151,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |    8 |                  IO |
-| IBUF     |    5 |                  IO |
+| IBUF     |   21 |                  IO |
+| OBUFT    |    4 |                  IO |
+| OBUF     |    4 |                  IO |
 +----------+------+---------------------+
 
 
@@ -162,14 +163,17 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------------+------+
 |              Ref Name             | Used |
 +-----------------------------------+------+
-| design_1_var_ultra_lux_0_0        |    1 |
-| design_1_st7735_axi_spi_tmp_0_1   |    1 |
-| design_1_ila_0_0                  |    1 |
+| design_1_util_vector_logic_0_1    |    1 |
+| design_1_util_vector_logic_0_0    |    1 |
+| design_1_supress_lux_out_0_1      |    1 |
+| design_1_scale_output_0_0         |    1 |
+| design_1_prevent_negative_0_0     |    1 |
+| design_1_phase_increment_calc_0_0 |    1 |
 | design_1_encoder_counter_incr_1_0 |    1 |
 | design_1_encoder_counter_0_0      |    1 |
+| design_1_dds_compiler_0_0         |    1 |
 | design_1_clk_wiz_0_0              |    1 |
-| design_1_c_counter_binary_0_0     |    1 |
-| design_1_axis_parameter_trans_0_1 |    1 |
+| design_1_c_addsub_0_0             |    1 |
 +-----------------------------------+------+
 
 

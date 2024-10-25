@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Sat Sep 21 21:10:50 2024
+-- Date        : Wed Oct 23 20:19:40 2024
 -- Host        : DESKTOP-FM3EGBE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_clk_wiz_0_0 -prefix
 --               design_1_clk_wiz_0_0_ design_1_clk_wiz_0_0_stub.vhdl

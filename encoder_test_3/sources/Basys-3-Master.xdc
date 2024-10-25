@@ -1,0 +1,15 @@
+set_property IOSTANDARD LVCMOS33 [get_ports clk_0]
+set_property IOSTANDARD LVCMOS33 [get_ports {debounced_0[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {debounced_0[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {debounced_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {noisy_0[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {noisy_0[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {noisy_0[2]}]
+
+set_property PACKAGE_PIN L1 [get_ports {noisy_0[0]}]
+set_property PACKAGE_PIN P1 [get_ports {noisy_0[2]}]
+set_property PACKAGE_PIN N3 [get_ports {noisy_0[1]}]
+
+set_property PACKAGE_PIN T17 [get_ports {noisy_0[0]}]
+set_property PACKAGE_PIN W19 [get_ports {noisy_0[2]}]
+set_property PACKAGE_PIN U18 [get_ports {noisy_0[1]}]

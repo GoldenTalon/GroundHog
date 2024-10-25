@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Mon Oct 14 12:35:06 2024
+// Date        : Fri Oct 25 15:49:50 2024
 // Host        : DESKTOP-FM3EGBE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/FPGA_Projects/GroundHog/LuxInterconnect/LuxInterconnect.gen/sources_1/bd/design_1/ip/design_1_encoder_counter_incr_1_0/design_1_encoder_counter_incr_1_0_sim_netlist.v
@@ -24,7 +24,7 @@ module design_1_encoder_counter_incr_1_0
     default_clock_freq,
     counter_div_by_4,
     increment_value_out);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst;
   input [1:0]encoder_input;
   input button;
@@ -90,16 +90,16 @@ endmodule
 module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
    (counter_div_by_4,
     increment_value_out,
+    button,
     encoder_input,
     clk,
-    rst,
-    button);
+    rst);
   output [29:0]counter_div_by_4;
   output [2:0]increment_value_out;
+  input button;
   input [1:0]encoder_input;
   input clk;
   input rst;
-  input button;
 
   wire [2:2]QEM_return;
   wire \_inferred__1/i___0_carry__0_n_0 ;
@@ -166,37 +166,22 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   wire \_inferred__1/i___0_carry_n_6 ;
   wire \_inferred__1/i___0_carry_n_7 ;
   wire button;
-  wire [13:0]button_debounce_counter;
-  wire [13:1]button_debounce_counter0;
-  wire button_debounce_counter0_carry__0_n_0;
-  wire button_debounce_counter0_carry__0_n_1;
-  wire button_debounce_counter0_carry__0_n_2;
-  wire button_debounce_counter0_carry__0_n_3;
-  wire button_debounce_counter0_carry__1_n_0;
-  wire button_debounce_counter0_carry__1_n_1;
-  wire button_debounce_counter0_carry__1_n_2;
-  wire button_debounce_counter0_carry__1_n_3;
-  wire button_debounce_counter0_carry_n_0;
-  wire button_debounce_counter0_carry_n_1;
-  wire button_debounce_counter0_carry_n_2;
-  wire button_debounce_counter0_carry_n_3;
+  wire [9:0]button_debounce_counter;
   wire \button_debounce_counter[0]_i_1_n_0 ;
-  wire \button_debounce_counter[10]_i_1_n_0 ;
-  wire \button_debounce_counter[11]_i_1_n_0 ;
-  wire \button_debounce_counter[12]_i_1_n_0 ;
-  wire \button_debounce_counter[13]_i_1_n_0 ;
-  wire \button_debounce_counter[13]_i_3_n_0 ;
-  wire \button_debounce_counter[13]_i_4_n_0 ;
   wire \button_debounce_counter[1]_i_1_n_0 ;
   wire \button_debounce_counter[2]_i_1_n_0 ;
   wire \button_debounce_counter[3]_i_1_n_0 ;
   wire \button_debounce_counter[4]_i_1_n_0 ;
   wire \button_debounce_counter[5]_i_1_n_0 ;
+  wire \button_debounce_counter[5]_i_2_n_0 ;
   wire \button_debounce_counter[6]_i_1_n_0 ;
   wire \button_debounce_counter[7]_i_1_n_0 ;
   wire \button_debounce_counter[8]_i_1_n_0 ;
   wire \button_debounce_counter[9]_i_1_n_0 ;
+  wire \button_debounce_counter[9]_i_2_n_0 ;
+  wire \button_debounce_counter[9]_i_3_n_0 ;
   wire \button_press_count[0]_i_1_n_0 ;
+  wire \button_press_count[1]_i_2_n_0 ;
   wire button_press_count__0;
   wire button_press_count_n_0;
   wire \button_press_count_reg_n_0_[0] ;
@@ -256,8 +241,8 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   wire [29:0]counter_div_by_4;
   wire \counter_div_by_4[29]_i_1_n_0 ;
   wire data0;
-  wire [15:0]debounce_counter;
-  wire [15:1]debounce_counter0;
+  wire [13:0]debounce_counter;
+  wire [13:1]debounce_counter0;
   wire debounce_counter0_carry__0_n_0;
   wire debounce_counter0_carry__0_n_1;
   wire debounce_counter0_carry__0_n_2;
@@ -266,8 +251,6 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   wire debounce_counter0_carry__1_n_1;
   wire debounce_counter0_carry__1_n_2;
   wire debounce_counter0_carry__1_n_3;
-  wire debounce_counter0_carry__2_n_2;
-  wire debounce_counter0_carry__2_n_3;
   wire debounce_counter0_carry_n_0;
   wire debounce_counter0_carry_n_1;
   wire debounce_counter0_carry_n_2;
@@ -277,8 +260,6 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   wire \debounce_counter[11]_i_1_n_0 ;
   wire \debounce_counter[12]_i_1_n_0 ;
   wire \debounce_counter[13]_i_1_n_0 ;
-  wire \debounce_counter[14]_i_1_n_0 ;
-  wire \debounce_counter[15]_i_1_n_0 ;
   wire \debounce_counter[1]_i_1_n_0 ;
   wire \debounce_counter[2]_i_1_n_0 ;
   wire \debounce_counter[3]_i_1_n_0 ;
@@ -381,7 +362,6 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   wire \increment_value_reg_n_0_[0] ;
   wire \increment_value_reg_n_0_[13] ;
   wire \increment_value_reg_n_0_[6] ;
-  wire p_0_in;
   wire [1:0]prev_state;
   wire rst;
   wire [1:0]stable_input;
@@ -389,9 +369,8 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   wire \stable_input[1]_i_1_n_0 ;
   wire \stable_input[1]_i_2_n_0 ;
   wire \stable_input[1]_i_3_n_0 ;
+  wire \stable_input[1]_i_4_n_0 ;
   wire [3:3]\NLW__inferred__1/i___0_carry__6_CO_UNCONNECTED ;
-  wire [3:0]NLW_button_debounce_counter0_carry__2_CO_UNCONNECTED;
-  wire [3:1]NLW_button_debounce_counter0_carry__2_O_UNCONNECTED;
   wire [3:0]NLW_counter0_carry_O_UNCONNECTED;
   wire [3:0]NLW_counter0_carry__0_O_UNCONNECTED;
   wire [3:0]NLW_counter0_carry__1_O_UNCONNECTED;
@@ -401,8 +380,8 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   wire [3:0]\NLW_counter0_inferred__0/i__carry__0_O_UNCONNECTED ;
   wire [3:0]\NLW_counter0_inferred__0/i__carry__1_O_UNCONNECTED ;
   wire [3:0]\NLW_counter0_inferred__0/i__carry__2_O_UNCONNECTED ;
-  wire [3:2]NLW_debounce_counter0_carry__2_CO_UNCONNECTED;
-  wire [3:3]NLW_debounce_counter0_carry__2_O_UNCONNECTED;
+  wire [3:0]NLW_debounce_counter0_carry__2_CO_UNCONNECTED;
+  wire [3:1]NLW_debounce_counter0_carry__2_O_UNCONNECTED;
 
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \_inferred__1/i___0_carry 
@@ -468,218 +447,130 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .DI({1'b0,i___0_carry__6_i_1_n_0,i___0_carry__6_i_2_n_0,i___0_carry__6_i_3_n_0}),
         .O({\_inferred__1/i___0_carry__6_n_4 ,\_inferred__1/i___0_carry__6_n_5 ,\_inferred__1/i___0_carry__6_n_6 ,\_inferred__1/i___0_carry__6_n_7 }),
         .S({i___0_carry__6_i_4_n_0,i___0_carry__6_i_5_n_0,i___0_carry__6_i_6_n_0,i___0_carry__6_i_7_n_0}));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 button_debounce_counter0_carry
-       (.CI(1'b0),
-        .CO({button_debounce_counter0_carry_n_0,button_debounce_counter0_carry_n_1,button_debounce_counter0_carry_n_2,button_debounce_counter0_carry_n_3}),
-        .CYINIT(button_debounce_counter[0]),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(button_debounce_counter0[4:1]),
-        .S(button_debounce_counter[4:1]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 button_debounce_counter0_carry__0
-       (.CI(button_debounce_counter0_carry_n_0),
-        .CO({button_debounce_counter0_carry__0_n_0,button_debounce_counter0_carry__0_n_1,button_debounce_counter0_carry__0_n_2,button_debounce_counter0_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(button_debounce_counter0[8:5]),
-        .S(button_debounce_counter[8:5]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 button_debounce_counter0_carry__1
-       (.CI(button_debounce_counter0_carry__0_n_0),
-        .CO({button_debounce_counter0_carry__1_n_0,button_debounce_counter0_carry__1_n_1,button_debounce_counter0_carry__1_n_2,button_debounce_counter0_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(button_debounce_counter0[12:9]),
-        .S(button_debounce_counter[12:9]));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 button_debounce_counter0_carry__2
-       (.CI(button_debounce_counter0_carry__1_n_0),
-        .CO(NLW_button_debounce_counter0_carry__2_CO_UNCONNECTED[3:0]),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({NLW_button_debounce_counter0_carry__2_O_UNCONNECTED[3:1],button_debounce_counter0[13]}),
-        .S({1'b0,1'b0,1'b0,button_debounce_counter[13]}));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT4 #(
-    .INIT(16'h0440)) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
     \button_debounce_counter[0]_i_1 
-       (.I0(button_debounce_counter[0]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(\button_debounce_counter[9]_i_3_n_0 ),
+        .I1(button_debounce_counter[0]),
         .O(\button_debounce_counter[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
-    \button_debounce_counter[10]_i_1 
-       (.I0(button_debounce_counter0[10]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
-        .O(\button_debounce_counter[10]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
-    \button_debounce_counter[11]_i_1 
-       (.I0(button_debounce_counter0[11]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
-        .O(\button_debounce_counter[11]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
-    \button_debounce_counter[12]_i_1 
-       (.I0(button_debounce_counter0[12]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
-        .O(\button_debounce_counter[12]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
-    \button_debounce_counter[13]_i_1 
-       (.I0(button_debounce_counter0[13]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
-        .O(\button_debounce_counter[13]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'h1011FFFF)) 
-    \button_debounce_counter[13]_i_2 
-       (.I0(button_debounce_counter[11]),
-        .I1(button_debounce_counter[12]),
-        .I2(\button_debounce_counter[13]_i_3_n_0 ),
-        .I3(\button_debounce_counter[13]_i_4_n_0 ),
-        .I4(button_debounce_counter[13]),
-        .O(p_0_in));
-  LUT4 #(
-    .INIT(16'h0001)) 
-    \button_debounce_counter[13]_i_3 
-       (.I0(button_debounce_counter[6]),
-        .I1(button_debounce_counter[7]),
-        .I2(button_debounce_counter[5]),
-        .I3(button_debounce_counter[4]),
-        .O(\button_debounce_counter[13]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
-    .INIT(8'h80)) 
-    \button_debounce_counter[13]_i_4 
-       (.I0(button_debounce_counter[8]),
-        .I1(button_debounce_counter[10]),
-        .I2(button_debounce_counter[9]),
-        .O(\button_debounce_counter[13]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
+    .INIT(8'h28)) 
     \button_debounce_counter[1]_i_1 
-       (.I0(button_debounce_counter0[1]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(\button_debounce_counter[9]_i_3_n_0 ),
+        .I1(button_debounce_counter[0]),
+        .I2(button_debounce_counter[1]),
         .O(\button_debounce_counter[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'h0880)) 
+    .INIT(16'h2A80)) 
     \button_debounce_counter[2]_i_1 
-       (.I0(button_debounce_counter0[2]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(\button_debounce_counter[9]_i_3_n_0 ),
+        .I1(button_debounce_counter[0]),
+        .I2(button_debounce_counter[1]),
+        .I3(button_debounce_counter[2]),
         .O(\button_debounce_counter[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h7F008000)) 
     \button_debounce_counter[3]_i_1 
-       (.I0(button_debounce_counter0[3]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(button_debounce_counter[2]),
+        .I1(button_debounce_counter[0]),
+        .I2(button_debounce_counter[1]),
+        .I3(\button_debounce_counter[9]_i_3_n_0 ),
+        .I4(button_debounce_counter[3]),
         .O(\button_debounce_counter[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
+  LUT6 #(
+    .INIT(64'h7FFF000080000000)) 
     \button_debounce_counter[4]_i_1 
-       (.I0(button_debounce_counter0[4]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(button_debounce_counter[1]),
+        .I1(button_debounce_counter[0]),
+        .I2(button_debounce_counter[2]),
+        .I3(button_debounce_counter[3]),
+        .I4(\button_debounce_counter[9]_i_3_n_0 ),
+        .I5(button_debounce_counter[4]),
         .O(\button_debounce_counter[4]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
+  LUT3 #(
+    .INIT(8'h48)) 
     \button_debounce_counter[5]_i_1 
-       (.I0(button_debounce_counter0[5]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(\button_debounce_counter[5]_i_2_n_0 ),
+        .I1(\button_debounce_counter[9]_i_3_n_0 ),
+        .I2(button_debounce_counter[5]),
         .O(\button_debounce_counter[5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \button_debounce_counter[5]_i_2 
+       (.I0(button_debounce_counter[4]),
+        .I1(button_debounce_counter[3]),
+        .I2(button_debounce_counter[2]),
+        .I3(button_debounce_counter[0]),
+        .I4(button_debounce_counter[1]),
+        .O(\button_debounce_counter[5]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'h84)) 
     \button_debounce_counter[6]_i_1 
-       (.I0(button_debounce_counter0[6]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(\button_debounce_counter[9]_i_2_n_0 ),
+        .I1(\button_debounce_counter[9]_i_3_n_0 ),
+        .I2(button_debounce_counter[6]),
         .O(\button_debounce_counter[6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
-    .INIT(16'h0880)) 
+    .INIT(16'hD020)) 
     \button_debounce_counter[7]_i_1 
-       (.I0(button_debounce_counter0[7]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(button_debounce_counter[6]),
+        .I1(\button_debounce_counter[9]_i_2_n_0 ),
+        .I2(\button_debounce_counter[9]_i_3_n_0 ),
+        .I3(button_debounce_counter[7]),
         .O(\button_debounce_counter[7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'hDF002000)) 
     \button_debounce_counter[8]_i_1 
-       (.I0(button_debounce_counter0[8]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(button_debounce_counter[7]),
+        .I1(\button_debounce_counter[9]_i_2_n_0 ),
+        .I2(button_debounce_counter[6]),
+        .I3(\button_debounce_counter[9]_i_3_n_0 ),
+        .I4(button_debounce_counter[8]),
         .O(\button_debounce_counter[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT4 #(
-    .INIT(16'h0880)) 
+  LUT6 #(
+    .INIT(64'hDFFF000020000000)) 
     \button_debounce_counter[9]_i_1 
-       (.I0(button_debounce_counter0[9]),
-        .I1(p_0_in),
-        .I2(button),
-        .I3(button_prev_reg_n_0),
+       (.I0(button_debounce_counter[6]),
+        .I1(\button_debounce_counter[9]_i_2_n_0 ),
+        .I2(button_debounce_counter[7]),
+        .I3(button_debounce_counter[8]),
+        .I4(\button_debounce_counter[9]_i_3_n_0 ),
+        .I5(button_debounce_counter[9]),
         .O(\button_debounce_counter[9]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'h7FFFFFFFFFFFFFFF)) 
+    \button_debounce_counter[9]_i_2 
+       (.I0(button_debounce_counter[1]),
+        .I1(button_debounce_counter[0]),
+        .I2(button_debounce_counter[2]),
+        .I3(button_debounce_counter[3]),
+        .I4(button_debounce_counter[4]),
+        .I5(button_debounce_counter[5]),
+        .O(\button_debounce_counter[9]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000FF1FFF1F0000)) 
+    \button_debounce_counter[9]_i_3 
+       (.I0(button_debounce_counter[3]),
+        .I1(button_debounce_counter[4]),
+        .I2(button_debounce_counter[5]),
+        .I3(\button_press_count[1]_i_2_n_0 ),
+        .I4(button),
+        .I5(button_prev_reg_n_0),
+        .O(\button_debounce_counter[9]_i_3_n_0 ));
   FDCE \button_debounce_counter_reg[0] 
        (.C(clk),
         .CE(1'b1),
         .CLR(rst),
         .D(\button_debounce_counter[0]_i_1_n_0 ),
         .Q(button_debounce_counter[0]));
-  FDCE \button_debounce_counter_reg[10] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(rst),
-        .D(\button_debounce_counter[10]_i_1_n_0 ),
-        .Q(button_debounce_counter[10]));
-  FDCE \button_debounce_counter_reg[11] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(rst),
-        .D(\button_debounce_counter[11]_i_1_n_0 ),
-        .Q(button_debounce_counter[11]));
-  FDCE \button_debounce_counter_reg[12] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(rst),
-        .D(\button_debounce_counter[12]_i_1_n_0 ),
-        .Q(button_debounce_counter[12]));
-  FDCE \button_debounce_counter_reg[13] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(rst),
-        .D(\button_debounce_counter[13]_i_1_n_0 ),
-        .Q(button_debounce_counter[13]));
   FDCE \button_debounce_counter_reg[1] 
        (.C(clk),
         .CE(1'b1),
@@ -734,26 +625,37 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .CLR(rst),
         .D(\button_debounce_counter[9]_i_1_n_0 ),
         .Q(button_debounce_counter[9]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT2 #(
     .INIT(4'h6)) 
     button_press_count
        (.I0(\button_press_count_reg_n_0_[1] ),
         .I1(\button_press_count_reg_n_0_[0] ),
         .O(button_press_count_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \button_press_count[0]_i_1 
        (.I0(\button_press_count_reg_n_0_[0] ),
         .O(\button_press_count[0]_i_1_n_0 ));
-  LUT3 #(
-    .INIT(8'h04)) 
+  LUT6 #(
+    .INIT(64'h0000444000000000)) 
     \button_press_count[1]_i_1 
-       (.I0(p_0_in),
-        .I1(button),
-        .I2(button_prev_reg_n_0),
+       (.I0(\button_press_count[1]_i_2_n_0 ),
+        .I1(button_debounce_counter[5]),
+        .I2(button_debounce_counter[4]),
+        .I3(button_debounce_counter[3]),
+        .I4(button_prev_reg_n_0),
+        .I5(button),
         .O(button_press_count__0));
+  LUT4 #(
+    .INIT(16'h7FFF)) 
+    \button_press_count[1]_i_2 
+       (.I0(button_debounce_counter[9]),
+        .I1(button_debounce_counter[8]),
+        .I2(button_debounce_counter[7]),
+        .I3(button_debounce_counter[6]),
+        .O(\button_press_count[1]_i_2_n_0 ));
   FDCE \button_press_count_reg[0] 
        (.C(clk),
         .CE(button_press_count__0),
@@ -766,12 +668,15 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .CLR(rst),
         .D(button_press_count_n_0),
         .Q(\button_press_count_reg_n_0_[1] ));
-  LUT3 #(
-    .INIT(8'hCA)) 
+  LUT6 #(
+    .INIT(64'hFFFFBBBF44400000)) 
     button_prev_i_1
-       (.I0(button),
-        .I1(button_prev_reg_n_0),
-        .I2(p_0_in),
+       (.I0(\button_press_count[1]_i_2_n_0 ),
+        .I1(button_debounce_counter[5]),
+        .I2(button_debounce_counter[4]),
+        .I3(button_debounce_counter[3]),
+        .I4(button),
+        .I5(button_prev_reg_n_0),
         .O(button_prev_i_1_n_0));
   FDPE button_prev_reg
        (.C(clk),
@@ -1365,11 +1270,11 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 debounce_counter0_carry__2
        (.CI(debounce_counter0_carry__1_n_0),
-        .CO({NLW_debounce_counter0_carry__2_CO_UNCONNECTED[3:2],debounce_counter0_carry__2_n_2,debounce_counter0_carry__2_n_3}),
+        .CO(NLW_debounce_counter0_carry__2_CO_UNCONNECTED[3:0]),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({NLW_debounce_counter0_carry__2_O_UNCONNECTED[3],debounce_counter0[15:13]}),
-        .S({1'b0,debounce_counter[15:13]}));
+        .O({NLW_debounce_counter0_carry__2_O_UNCONNECTED[3:1],debounce_counter0[13]}),
+        .S({1'b0,1'b0,1'b0,debounce_counter[13]}));
   LUT6 #(
     .INIT(64'h0440444444440440)) 
     \debounce_counter[0]_i_1 
@@ -1420,26 +1325,6 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .I4(stable_input[0]),
         .I5(encoder_input[0]),
         .O(\debounce_counter[13]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0880888888880880)) 
-    \debounce_counter[14]_i_1 
-       (.I0(debounce_counter0[14]),
-        .I1(\stable_input[1]_i_2_n_0 ),
-        .I2(stable_input[1]),
-        .I3(encoder_input[1]),
-        .I4(stable_input[0]),
-        .I5(encoder_input[0]),
-        .O(\debounce_counter[14]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0880888888880880)) 
-    \debounce_counter[15]_i_1 
-       (.I0(debounce_counter0[15]),
-        .I1(\stable_input[1]_i_2_n_0 ),
-        .I2(stable_input[1]),
-        .I3(encoder_input[1]),
-        .I4(stable_input[0]),
-        .I5(encoder_input[0]),
-        .O(\debounce_counter[15]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h0880888888880880)) 
     \debounce_counter[1]_i_1 
@@ -1560,18 +1445,6 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .CLR(rst),
         .D(\debounce_counter[13]_i_1_n_0 ),
         .Q(debounce_counter[13]));
-  FDCE \debounce_counter_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(rst),
-        .D(\debounce_counter[14]_i_1_n_0 ),
-        .Q(debounce_counter[14]));
-  FDCE \debounce_counter_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .CLR(rst),
-        .D(\debounce_counter[15]_i_1_n_0 ),
-        .Q(debounce_counter[15]));
   FDCE \debounce_counter_reg[1] 
        (.C(clk),
         .CE(1'b1),
@@ -2352,14 +2225,14 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
        (.I0(\button_press_count_reg_n_0_[0] ),
         .I1(\button_press_count_reg_n_0_[1] ),
         .O(\increment_value[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \increment_value[13]_i_1 
        (.I0(\button_press_count_reg_n_0_[1] ),
         .I1(\button_press_count_reg_n_0_[0] ),
         .O(increment_value[13]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \increment_value[6]_i_1 
@@ -2414,7 +2287,7 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .CLR(rst),
         .D(stable_input[1]),
         .Q(prev_state[1]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \stable_input[0]_i_1 
@@ -2422,7 +2295,7 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .I1(encoder_input[0]),
         .I2(\stable_input[1]_i_2_n_0 ),
         .O(\stable_input[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \stable_input[1]_i_1 
@@ -2430,24 +2303,30 @@ module design_1_encoder_counter_incr_1_0_encoder_counter_increment_change
         .I1(encoder_input[1]),
         .I2(\stable_input[1]_i_2_n_0 ),
         .O(\stable_input[1]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h10FF)) 
+  LUT5 #(
+    .INIT(32'h1011FFFF)) 
     \stable_input[1]_i_2 
-       (.I0(debounce_counter[13]),
-        .I1(debounce_counter[14]),
-        .I2(\stable_input[1]_i_3_n_0 ),
-        .I3(debounce_counter[15]),
-        .O(\stable_input[1]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h01555555FFFFFFFF)) 
-    \stable_input[1]_i_3 
        (.I0(debounce_counter[11]),
+        .I1(debounce_counter[12]),
+        .I2(\stable_input[1]_i_3_n_0 ),
+        .I3(\stable_input[1]_i_4_n_0 ),
+        .I4(debounce_counter[13]),
+        .O(\stable_input[1]_i_2_n_0 ));
+  LUT4 #(
+    .INIT(16'h0001)) 
+    \stable_input[1]_i_3 
+       (.I0(debounce_counter[6]),
         .I1(debounce_counter[7]),
-        .I2(debounce_counter[8]),
-        .I3(debounce_counter[10]),
-        .I4(debounce_counter[9]),
-        .I5(debounce_counter[12]),
+        .I2(debounce_counter[5]),
+        .I3(debounce_counter[4]),
         .O(\stable_input[1]_i_3_n_0 ));
+  LUT3 #(
+    .INIT(8'h80)) 
+    \stable_input[1]_i_4 
+       (.I0(debounce_counter[8]),
+        .I1(debounce_counter[10]),
+        .I2(debounce_counter[9]),
+        .O(\stable_input[1]_i_4_n_0 ));
   FDCE \stable_input_reg[0] 
        (.C(clk),
         .CE(1'b1),

@@ -1,15 +1,17 @@
 module var_ultra_lux #(
-    parameter INPUT_CLK_FREQ = 300_000_000  // Input clock frequency in Hz (default is 300 MHz)
+     parameter signed [31:0] INPUT_CLK_FREQ = 100_000_000,  // Input clock frequency in Hz (default is 300 MHz)
+     parameter signed [31:0] DEFAULT_OUTPUT_FREQ = 3_000_000  // Default output frequency in Hz
 )(
     input wire clk,                 // Input clock
     input wire reset,               // Reset signal
     input wire [31:0] tau,          // TAU as an input (in nanoseconds)
     input wire signed [31:0] state_freq,   // Dynamic state transition frequency input in Hz (up to 50 MHz)
-    output reg [1:0] lux_state_out  // 2-bit state output
+    output reg [1:0] lux_state_out,  // 2-bit state output
+    output reg signed [31:0] cycles_for_total_states
 );
 
     // Calculate the total number of cycles for all states combined dynamically based on state_freq input
-    reg [31:0] cycles_for_total_states;
+   // reg signed [31:0] cycles_for_total_states;
     reg [31:0] tau_int_holder = 0;
 
     // Calculate the number of clock cycles for the "all off" states (S0 and S2) based on tau input in nanoseconds
@@ -31,14 +33,14 @@ module var_ultra_lux #(
             current_state <= S0;
             counter <= 0;
             tau_int_holder <= tau;
-            cycles_for_total_states <= INPUT_CLK_FREQ / state_freq;
+            cycles_for_total_states <= INPUT_CLK_FREQ / (state_freq+DEFAULT_OUTPUT_FREQ);
 
             // Convert tau (in nanoseconds) to clock cycles
             cycles_per_all_off_state <= tau; // Proper scaling in Verilog integer arithmetic
             // Calculate the number of cycles for the "on" states
             cycles_per_on_state <= (cycles_for_total_states - (cycles_per_all_off_state * 2)) / 2;
         end else begin
-            cycles_for_total_states <= INPUT_CLK_FREQ / state_freq;
+            cycles_for_total_states <= INPUT_CLK_FREQ / (state_freq+DEFAULT_OUTPUT_FREQ);
             cycles_per_all_off_state <=  tau; // Proper scaling in Verilog integer arithmetic
             cycles_per_on_state <= (cycles_for_total_states - (cycles_per_all_off_state * 2)) / 2;
 
